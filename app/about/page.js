@@ -186,10 +186,10 @@ export default function Home() {
                     </div>
                 </section>
                 {/* End Company History */}
-                <CaseOne/>
                 <CounterOne/>
-                <TestimonialsTwo/>
-                <TeamOne 
+                <CaseOne/>
+                {/* <TestimonialsTwo/> */}
+              {/*   <TeamOne 
                     className="team-one team-one--about"
                     sectionTitle="Experienced Attorneys"
                     subTitle="Meet Our Lawyers"
@@ -228,7 +228,7 @@ export default function Home() {
                         ]
                         }
                     ]}
-                />
+                /> */}
 
                 </div>
             </Layout>

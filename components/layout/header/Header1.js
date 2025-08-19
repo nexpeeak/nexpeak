@@ -1,12 +1,20 @@
-import Link from "next/link";
-import Menu from "../Menu"; // Assuming you have a separate Menu component for the navigation
-import MobileMenu from "../MobileMenu"; // Assuming you have a MobileMenu component
+import Link from 'next/link';
+import Menu from '../Menu';
+import MobileMenu from '../MobileMenu';
 
-export default function Header1({ scroll, isMobileMenu, handleMobileMenu, isSidebar, handlePopup, handleSidebar }) {
+export default function Header1({
+  scroll,
+  isMobileMenu,
+  handleMobileMenu,
+  isSidebar,
+  handlePopup,
+  handleSidebar,
+}) {
   return (
-    <header className={`main-header main-header-one ${scroll ? "fixed-header" : ""}`}>
-     
-      <div className={`sticky-header menu-area ${scroll ? "sticky-menu" : ""}`}>
+    <header
+      className={`main-header main-header-one ${scroll ? 'fixed-header' : ''}`}
+    >
+      <div className={`sticky-header menu-area ${scroll ? 'sticky-menu' : ''}`}>
         <div className="auto-container">
           <div className="menu-area__inner">
             <div className="mobile-nav-toggler" onClick={handleMobileMenu}>
@@ -16,9 +24,13 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu, isSide
               <nav className="menu-nav">
                 <div className="main-header-one__inner">
                   <div className="main-header-one__left">
-                    <div className="logo-box-one" >
+                    <div className="logo-box-one">
                       <Link href="/">
-                        <img src="assets/img/logo.png" alt="Logo" style={{height:"70px",width:"185px"}} />
+                        <img
+                          src="assets/img/logo.png"
+                          alt="Logo"
+                          style={{ height: '70px', width: '185px' }}
+                        />
                       </Link>
                     </div>
 
@@ -34,9 +46,7 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu, isSide
                         <a href="tel:123456789">+2 854 3605 86</a>
                       </p>
                     </div>
-                    <div className="header-search-box" onClick={handlePopup}>
-                      <div className="main-menu__search search-toggler icon-icon-7"></div>
-                    </div>
+                    {/* The search box div has been removed */}
                     <div className="btn-box">
                       <Link href="/contact" className="thm-btn">
                         Learn More
@@ -57,7 +67,11 @@ export default function Header1({ scroll, isMobileMenu, handleMobileMenu, isSide
             </div>
           </div>
 
-          <MobileMenu handleMobileMenu={handleMobileMenu} handleSidebar={handleSidebar} isSidebar={isSidebar} />
+          <MobileMenu
+            handleMobileMenu={handleMobileMenu}
+            handleSidebar={handleSidebar}
+            isSidebar={isSidebar}
+          />
         </div>
       </div>
     </header>

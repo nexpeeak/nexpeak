@@ -23,11 +23,11 @@ export default function Home() {
                 <ChooseOne />
                 <ServicesOne />
                 <Brand /> 
-                <CaseOne /> 
+                {/* <CaseOne />  */}
                 <Testimonial />
-                <Team />
+                {/* <Team /> */}
                 <Cta/>
-                <Blog />
+                {/* <Blog /> */}
             </Layout>
         </>
     )
