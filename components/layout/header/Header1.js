@@ -49,7 +49,7 @@ export default function Header1({
                     {/* The search box div has been removed */}
                     <div className="btn-box">
                       <Link href="/contact" className="thm-btn">
-                        Learn More
+                        Get a Appointment
                         <span className="thm-btn__icon">
                           <i className="icon-icon-8"></i>
                         </span>

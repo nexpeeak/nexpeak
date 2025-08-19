@@ -64,7 +64,7 @@ export default function Footer1() {
                   <div className="single-footer-widget footer-widget__about">
                     <div className="logo-box">
                       <Link href="/">
-                        <img src="/assets/img/resource/logo-2.png" alt="Logo" />
+                        <img src="/assets/img/logo.png" alt="Logo" />
                       </Link>
                     </div>
 
