@@ -9,13 +9,13 @@ export default function ChooseOne() {
     shapeImage: "/assets/img/shape/why-choose-v1-shape1.png",
     chooseImage: "/assets/img/resource/why-choose-v1-img1.jpg",
     sectionTitleIcon: "/assets/img/icon/sec-title-img1.png",
-    sectionTitleText: "why choose us",
-    sectionMainTitle: "best lawyer make better justice",
+    sectionTitleText: "why choose nexpeak",
+    sectionMainTitle: "turning challenges into opportunities",
     chooseText:
-      "Likeness had fruit moved herb you're earth sea dry creature own man give It fish cattle they are very could male give.",
+      "Business laws can feel overwhelming. At Nexpeak, we simplify the complex, protect your interests, and keep you focused on growth.",
     features: [
-      "Highly skilled lawyer squad",
-      "Committed to bringing client's justice",
+      "Strong advocacy that defends your rights",
+      "Smart strategies that drive lasting success",
     ],
     buttonText: "let’s work",
     buttonLink: "#",

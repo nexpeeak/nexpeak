@@ -1,204 +1,172 @@
-"use client";
+'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
+import {
+  Mail,
+  Phone,
+  MapPin,
+  Facebook,
+  Twitter,
+  Linkedin,
+  Instagram,
+} from 'lucide-react';
 
-// Sample data for footer content
-const footerBrands = [
-  "/assets/img/footer/footer-v1-brand1.png",
-  "/assets/img/footer/footer-v1-brand2.png",
-  "/assets/img/footer/footer-v1-brand3.png",
-  "/assets/img/footer/footer-v1-brand4.png",
-  "/assets/img/footer/footer-v1-brand5.png"
-];
-
-const services = [
-  { href: "/criminal-case", text: "Corporate Law" },
-  { href: "/criminal-case", text: "Insurance Law" },
-  { href: "/criminal-case", text: "Family Law" },
-  { href: "/criminal-case", text: "Car Accident" },
-  { href: "/criminal-case", text: "Health Care" },
-  { href: "/criminal-case", text: "Real Estate Law" }
-];
-
-const socialLinks = [
-  { href: "#", iconClass: "icon-icon-4" },
-  { href: "#", iconClass: "icon-icon-3" },
-  { href: "#", iconClass: "icon-icon-2" },
-  { href: "#", iconClass: "icon-icon-1" }
-];
-
-export default function Footer1() {
+const Footer = () => {
   return (
-    <>
-      {/* Start Footer One */}
-      <footer className="footer-one">
-        {/* Start Footer Main */}
-        <div className="footer-main">
-          <div className="footer-one__top">
-            <div className="container">
-              <div className="footer-one__top-inner">
-                <div className="footer-one__top-text">
-                  <h2>Best global law <br /> firm award</h2>
-                </div>
-
-                <div className="footer-one__top-brand">
-                  <ul>
-                    {footerBrands.map((src, index) => (
-                      <li key={index}>
-                        <div className="img-box">
-                          <img src={src} alt={`Footer Brand ${index + 1}`} />
-                        </div>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+    <footer className="footer-area footer-bg">
+      <div className="container py-5">
+        <div className="row">
+          {/* Logo & Description */}
+          <div className="col-lg-4 col-md-6 mb-4">
+            <div className="footer-widget logo-widget">
+              <Link href="/">
+                {/* Replace with your actual logo path */}
+                <Image
+                  src="/assets/img/logo.png"
+                  alt="Nexpeak Logo"
+                  width={160}
+                  className='bg-white'
+                  height={80}
+                />
+              </Link>
+              <p className="mt-3 ">
+                Nexpeak is a client-focused legal firm offering expert counsel
+                and dedicated advocacy. We provide clear, strategic guidance
+                tailored to your unique needs.
+              </p>
+              <div className="social-links mt-4">
+                <Link href="#" aria-label="Facebook">
+                  <Facebook size={24} className="social-icon" />
+                </Link>
+                <Link href="#" aria-label="Twitter">
+                  <Twitter size={24} className="social-icon" />
+                </Link>
+                <Link href="#" aria-label="LinkedIn">
+                  <Linkedin size={24} className="social-icon" />
+                </Link>
+                <Link href="#" aria-label="Instagram">
+                  <Instagram size={24} className="social-icon" />
+                </Link>
               </div>
             </div>
           </div>
 
-          <div className="footer-one__bottom">
-            <div className="container">
-              <div className="row">
-                {/* Start Single Footer Widget */}
-                <div className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".1s">
-                  <div className="single-footer-widget footer-widget__about">
-                    <div className="logo-box">
-                      <Link href="/">
-                        <img src="/assets/img/logo.png" alt="Logo" />
-                      </Link>
-                    </div>
+          {/* Quick Links */}
+          <div className="col-lg-2 col-md-6 mb-4">
+            <div className="footer-widget links-widget">
+              <h4 className="footer-heading">Our Services</h4>
+              <ul className="list-unstyled">
+                <li>
+                  <Link href="/services/startup">Startup & Incorporation</Link>
+                </li>
+                <li>
+                  <Link href="/services/contract">Contract Drafting</Link>
+                </li>
+                <li>
+                  <Link href="/services/ipr">IPR & Brand Protection</Link>
+                </li>
+                <li>
+                  <Link href="/services/compliance">Compliance Management</Link>
+                </li>
+                <li>
+                  <Link href="/services/tax">Tax & Financial Compliance</Link>
+                </li>
+              </ul>
+            </div>
+          </div>
 
-                    <div className="footer-widget__about-inner">
-                      <div className="text-box1">
-                        <p>Living blessed fore meat likeness <br /> seas their outstand form.</p>
-                      </div>
+          {/* Contact Information */}
+          <div className="col-lg-3 col-md-6 mb-4">
+            <div className="footer-widget contact-widget">
+              <h4 className="footer-heading">Contact Us</h4>
+              <ul className="list-unstyled">
+                <li>
+                  <MapPin size={20} className="icon me-2" />
+                  Two Horizon, Gurugram, 122002
+                </li>
+                <li>
+                  <MapPin size={20} className="icon me-2" />
+                  Vivekanand Puri, New Delhi, 110052
+                </li>
+                <li>
+                  <MapPin size={20} className="icon me-2" />
+                  Statesment House, Delhi 110001
+                </li>
+                <li>
+                  <a href="tel:+918799762249">
+                    <Phone size={20} className="icon me-2" />
+                    +91 8799762249
+                  </a>
+                </li>
+                <li>
+                  <a href="mailto:nexpeaklawfirm@gmail.com">
+                    <Mail size={20} className="icon me-2" />
+                    nexpeaklawfirm@gmail.com
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
 
-                      <div className="text-box2">
-                        <h3>Open Hours</h3>
-                        <p>Sunday To Thursday: 10:30AM - 5:30PM</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                {/* End Single Footer Widget */}
-
-                {/* Start Single Footer Widget */}
-                <div className="col-xl-2 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".2s">
-                  <div className="single-footer-widget footer-widget__contact">
-                    <div className="title">
-                      <h2>Contact Us</h2>
-                    </div>
-
-                    <div className="footer-widget__contact-list">
-                      <ul>
-                        <li>
-                          <p className="text1"><span className="icon-icon-24"></span> Location</p>
-                          <p className="text2">5829 Broadway Florence <br /> SC: 29501, US</p>
-                        </li>
-
-                        <li>
-                          <p className="text1"><span className="icon-icon-25"></span> Email Us</p>
-                          <p className="text2">
-                            <a href="mailto:lavale@example.com">lavale@example.com</a>
-                          </p>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                {/* End Single Footer Widget */}
-
-                {/* Start Single Footer Widget */}
-                <div className="col-xl-2 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
-                  <div className="single-footer-widget footer-widget__service">
-                    <div className="title">
-                      <h2>Service Area</h2>
-                    </div>
-
-                    <div className="footer-widget__service-box">
-                      <ul>
-                        {services.map((service, index) => (
-                          <li key={index}>
-                            <Link href={service.href}>
-                              <span className={`icon-icon-501`}></span>
-                              {service.text}
-                            </Link>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                {/* End Single Footer Widget */}
-
-                {/* Start Single Footer Widget */}
-                <div className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".4s">
-                  <div className="single-footer-widget footer-widget__subscribe">
-                    <div className="title">
-                      <h2>Subscribe</h2>
-                    </div>
-                    <div className="footer-widget__subscribe-box">
-                      <form className="footer-widget__subscribe-form">
-                        <div className="input-box">
-                          <input type="email" placeholder="YOUR EMAIL*" name="email" />
-                          <button type="submit" className="footer-widget__subscribe-form-btn">
-                            <i className="icon-icon-26"></i>
-                          </button>
-                        </div>
-                        <div className="footer-one__checkbox">
-                          <input type="checkbox" name="checkbox" id="checkbox1" />
-                          <label htmlFor="checkbox1">
-                            <span></span>I Agree to terms & Condition
-                          </label>
-                        </div>
-                      </form>
-
-                      <div className="footer-widget__subscribe-bottom">
-                        <div className="title-box">
-                          <h3>Follow</h3>
-                        </div>
-                        <div className="social-links">
-                          {socialLinks.map((link, index) => (
-                            <a key={index} href={link.href}>
-                              <span className={link.iconClass}></span>
-                            </a>
-                          ))}
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                {/* End Single Footer Widget */}
-              </div>
+          {/* Business Hours */}
+          <div className="col-lg-3 col-md-6 mb-4">
+            <div className="footer-widget hours-widget">
+              <h4 className="footer-heading">Business Hours</h4>
+              <ul className="list-unstyled">
+                <li>
+                  <strong>Opening Days:</strong>
+                </li>
+                <li>Monday – Friday: 9am to 8pm</li>
+                <li>Saturday: 9am to 5pm</li>
+                <li className="mt-3">
+                  <strong>Vacations:</strong>
+                </li>
+                <li>All Sundays & Official Holidays</li>
+              </ul>
             </div>
           </div>
         </div>
-        {/* End Footer Main */}
 
-        {/* Start Footer Bottom */}
-        <div className="footer-bottom">
-          <div className="container">
-            <div className="footer-bottom__inner">
-              <div className="footer-bottom__text">
-                <p>
-                  Copyright © 2024 | Alright reserved by{" "}
-                  <Link href="https://themeforest.net/user/themehealer/portfolio">Themehealer.</Link>
-                </p>
-              </div>
+        <hr className="my-4" />
 
-              <div className="footer-bottom__menu">
-                <ul>
-                  <li><Link href="/about">Career</Link></li>
-                  <li><Link href="/about">privacy & policy</Link></li>
-                  <li><Link href="/contact">contact</Link></li>
-                </ul>
-              </div>
-            </div>
+        {/* Footer Bottom Section */}
+        <div className="row align-items-center">
+          <div className="col-md-6 text-center text-md-start mb-3 mb-md-0">
+            <ul className="list-inline mb-0">
+              <li className="list-inline-item me-4">
+                <Link href="/privacy-policy" className="text-decoration-none">
+                  Privacy Policy
+                </Link>
+              </li>
+              <li className="list-inline-item me-4">
+                <Link href="/terms" className="text-decoration-none">
+                  Terms & Conditions
+                </Link>
+              </li>
+              <li className="list-inline-item">
+                <Link href="/cookie-policy" className="text-decoration-none">
+                  Cookie Policy
+                </Link>
+              </li>
+            </ul>
+          </div>
+          <div className="col-md-6 text-center text-md-end">
+            <p className="mb-0">
+              &copy; 2025 Nexpeak. All rights reserved. Designed by{' '}
+              <a
+                href="https://www..in"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                LeaniTech 
+              </a>
+            </p>
           </div>
         </div>
-        {/* End Footer Bottom */}
-      </footer>
-      {/* End Footer One */}
-    </>
+      </div>
+    </footer>
   );
-}
+};
+
+export default Footer;

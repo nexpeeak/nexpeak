@@ -3,13 +3,13 @@ import Layout from "@/components/layout/Layout";
 export default function Home() {
     return (
         <>
-            <Layout headerStyle={2} footerStyle={3} breadcrumbTitle="CONTACT US">
+            <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="CONTACT US">
                 <div>
                     {/* Start Contact Page */}
                     <section className="contact-page">
                         <div className="contact-page__top">
                             <div className="container">
-                                <div className="sec-title text-center">
+                                <div className="text-center sec-title">
                                     <div className="sub-title center">
                                         <div className="icon">
                                             <img src="/assets/img/icon/sec-title-img1.png" alt="Icon" />
@@ -38,9 +38,9 @@ export default function Home() {
                                                         </div>
                                                     </div>
                                                     <h2>
-                                                        248 North balmal Road <br />
-                                                        Halmark, NY 4189
+                                                       Two Horizon, Gurugram, 122002
                                                     </h2>
+                                                   
                                                 </div>
                                             </div>
                                         </div>
@@ -63,10 +63,10 @@ export default function Home() {
                                                         </div>
                                                     </div>
                                                     <h2>
-                                                        <a href="mailto:yourmail@email.com">support@lavale.com</a>
+                                                        <a href="mailto:yourmail@email.com">nexpeaklawfirm@gmail.com</a>
                                                     </h2>
                                                     <h2>
-                                                        <a href="mailto:yourmail@email.com">info@lavale.com</a>
+                                                        <a href="mailto:yourmail@email.com">info@nexpeak.in</a>
                                                     </h2>
                                                 </div>
                                             </div>
@@ -90,10 +90,10 @@ export default function Home() {
                                                         </div>
                                                     </div>
                                                     <h2>
-                                                        <a href="tel:123456789">1 (520) 5260 365</a>
+                                                        <a href="tel:123456789">+91 8799762249</a>
                                                     </h2>
                                                     <h2>
-                                                        <a href="tel:123456789">2 (562) 6980 560</a>
+                                                        <a href="tel:123456789">+91 8799762249</a>
                                                     </h2>
                                                 </div>
                                             </div>
@@ -193,7 +193,7 @@ export default function Home() {
                                                     </div>
                                                 </div>
                                             </form>
-                                            <p className="ajax-response mb-0 error"></p>
+                                            <p className="mb-0 ajax-response error"></p>
                                         </div>
                                     </div>
                                 </div>

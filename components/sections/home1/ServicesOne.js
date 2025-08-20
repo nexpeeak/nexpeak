@@ -13,26 +13,26 @@ export default function ServicesOne() {
     services: [
       {
         id: 1,
-        title: "family violence",
-        description: "Likeness had fruit moved herb earth sea dry",
+        title: "Startup Advisory & Incorporation",
+        description: "Business setup, compliance, and registration.",
         link: "criminal-case",
       },
       {
         id: 2,
-        title: "criminal law",
-        description: "Likeness had fruit moved herb earth sea dry",
+        title: "Contract Drafting & Negotiation",
+        description: "Strong agreements for smooth business deals.",
         link: "criminal-case",
       },
       {
         id: 3,
-        title: "insurance law",
-        description: "Likeness had fruit moved herb earth sea dry",
+        title: "IPR & Brand Protection",
+        description: "Safeguard trademarks, copyrights, and patents.",
         link: "criminal-case",
       },
       {
         id: 4,
-        title: "domestic law",
-        description: "Likeness had fruit moved herb earth sea dry",
+        title: "Dispute Resolution & Litigation",
+        description: "Effective strategies to resolve conflicts.",
         link: "criminal-case",
       },
     ],
@@ -70,7 +70,7 @@ export default function ServicesOne() {
                       <h2>{service.id.toString().padStart(2, "0")}/</h2>
                     </div>
                     <div className="text-box">
-                      <h2>
+                      <h2 style={{fontSize:"28px"}}>
                         <Link href={service.link}>{service.title}</Link>
                       </h2>
                       <p>{service.description}</p>

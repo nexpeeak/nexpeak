@@ -10,46 +10,87 @@ import { Pagination, Autoplay } from 'swiper/modules';
 const testimonials = [
   {
     rating: 5,
-    feedback: "Have the of third divide foreign bring give void rise you'll grass ton fowl forth morning gathering main also evening were intro the yielding spirit called be form grass face into begger you is.",
-    author: "John Doe",
-    caseType: "Digital Marketing",
-  },
-  {
-    rating: 4,
-    feedback: "Have the of third divide foreign bring give void rise you'll grass ton fowl forth morning gathering main also evening were intro the yielding spirit called be form grass face into begger you is.",
-    author: "Jane Smith",
-    caseType: "Web Development",
+    feedback:
+      "Our business operations have been strengthened by Nexpeak's legal insights. Their expertise in corporate law ensures smooth and compliant growth while providing the strategic guidance we need for long-term success.",
+    author: "Kathiyawad Ventures",
+    caseType: "Business Operations",
   },
   {
     rating: 5,
-    feedback: "Have the of third divide foreign bring give void rise you'll grass ton fowl forth morning gathering main also evening were intro the yielding spirit called be form grass face into begger you is.",
-    author: "Alice Johnson",
-    caseType: "Digital Experience",
+    feedback:
+      "We get the legal confidence we need from the advisory and contract drafting services provided by Nexpeak. Their precision and strategic approach safeguard our interests and help us navigate complex legal challenges with ease and confidence.",
+    author: "Capzow",
+    caseType: "Legal Advisory Services",
+  },
+  {
+    rating: 5,
+    feedback:
+      "Managing our contracts and intellectual property has been instrumental with Nexpeak. Their expertise ensures our agreements are airtight, and our innovations are well-protected, giving us the confidence to scale securely.",
+    author: "PTWO Technologies",
+    caseType: "Technology Solutions",
+  },
+  {
+    rating: 5,
+    feedback:
+      "A game-changer for us has been the legal advisory from Nexpeak. Their strategic guidance on contracts and compliance has streamlined our operations, allowing us to focus on growth with confidence and peace of mind.",
+    author: "Level Upwards",
+    caseType: "Business Consulting",
+  },
+  {
+    rating: 5,
+    feedback:
+      "A game-changer for our startup is Nexpeak. From incorporation to ongoing compliance, their team ensured every legal detail was handled seamlessly. We trust them not just as legal advisors, but as partners in our growth.",
+    author: "Cyclesync Technologies",
+    caseType: "Mobility Solutions",
+  },
+  {
+    rating: 5,
+    feedback:
+      "Protecting our brand identity was a key role for Nexpeak. From trademark registration to guiding us on IP strategy, their legal insight ensured TheBestDay is not just growing — it's secured. Their approach made complex IPR processes simple.",
+    author: "TheBestDay",
+    caseType: "Event Management",
+  },
+  {
+    rating: 5,
+    feedback:
+      "As a creative design firm, IP protection is critical. Nexpeak helped us safeguard our designs, draft client contracts, and stay compliant — making legal simple and stress-free for our growing business and creative team.",
+    author: "Poshak",
+    caseType: "Agri-Tech Solutions",
+  },
+  {
+    rating: 5,
+    feedback:
+      "For a branding and advertising agency, clear contracts and content rights matter. Nexpeak streamlined our agreements, NDAs, and IP usage policies — allowing us to focus on storytelling, not legal worries or potential conflicts.",
+    author: "Prismpath Mantra LLP",
+    caseType: "Branding & Advertising",
+  },
+  {
+    rating: 5,
+    feedback:
+      "As a startup incubator, we needed end-to-end legal guidance — from company structuring to startup due diligence. Nexpeak's support has been pivotal in creating a strong legal foundation for our portfolio startups and investors.",
+    author: "Assetsphere Ventures",
+    caseType: "Startup Incubator",
+  },
+  {
+    rating: 5,
+    feedback:
+      "As a platform in the digital payments space, our legal needs are complex. Nexpeak has been a true partner — ensuring our contracts are airtight, handling data privacy compliance and IP protection.",
+    author: "Inqubate",
+    caseType: "Digital Payments Platform",
+  },
+  {
+    rating: 5,
+    feedback:
+      "Nexpeak ensures our yoga and wellness business stays compliant with health sector regulations, service agreements, and licensing. Their legal clarity helps us focus fully on healing and wellbeing across all our service offerings.",
+    author: "Arulyog Wellbeing LLP",
+    caseType: "Wellness Services",
   },
 ];
 
-const formBackgroundImage = "/assets/img/shape/testimonials-v1-shape1.png";  // Replace with the actual path to your background image
-const formActionUrl = "/submit-form";  // Replace with your actual form action URL
+
+const formBackgroundImage = "/assets/img/shape/testimonials-v1-shape1.png"; 
 
 export default function Testimonial() {
-  const [formData, setFormData] = useState({
-    username: "",
-    email: "",
-    query: "YOUR QUERY*",
-    message: "",
-  });
-
-  const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
-    });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log('Form submitted:', formData);
-  };
 
   return (
     <>
@@ -60,88 +101,6 @@ export default function Testimonial() {
         </div>
         <div className="container">
           <div className="row">
-            {/* Start Testimonials One Form */}
-            <div className="col-xl-4 wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-              <div className="testimonials-one__form">
-                <div
-                  className="testimonials-one__form-bg"
-                  style={{ backgroundImage: `url(${formBackgroundImage})` }}
-                ></div>
-                <div className="title-box">
-                  <h2>Free Appointment</h2>
-                </div>
-                <form method="post" action={formActionUrl} onSubmit={handleSubmit}>
-                  <div className="form-group">
-                    <div className="icon-box"><span className="icon-icon-17"></span></div>
-                    <input
-                      type="text"
-                      name="username"
-                      placeholder="YOUR NAME*"
-                      value={formData.username}
-                      onChange={handleChange}
-                      required
-                    />
-                  </div>
-                  <div className="form-group">
-                    <div className="icon-box"><span className="icon-icon-18"></span></div>
-                    <input
-                      type="email"
-                      placeholder="YOUR EMAIL*"
-                      name="email"
-                      value={formData.email}
-                      onChange={handleChange}
-                      required
-                    />
-                  </div>
-                  <div className="form-group">
-                    <div className="select-box">
-                      <select
-                        className="selectmenu wide"
-                        name="query"
-                        value={formData.query}
-                        onChange={handleChange}
-                      >
-                        <option value="YOUR QUERY*">YOUR QUERY*</option>
-                        <option value="Digital Marketing">Digital Marketing</option>
-                        <option value="Digital Experience">Digital Experience</option>
-                        <option value="Web applications">Web applications</option>
-                        <option value="Web development">Web development</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div className="form-group">
-                    <div className="icon-box"><span className="icon-icon-19"></span></div>
-                    <textarea
-                      name="message"
-                      placeholder="MESSAGE HERE*"
-                      value={formData.message}
-                      onChange={handleChange}
-                      required
-                    ></textarea>
-                  </div>
-                  <div className="row">
-                    <div className="col-xl-12">
-                      <div className="button-box">
-                        <button className="thm-btn" type="submit" data-loading-text="Please wait...">
-                          Send Request
-                          <span className="thm-btn__icon">
-                            <i className="icon-icon-8"></i>
-                          </span>
-                          <span className="thm-btn__hover-group">
-                            <span className="thm-btn__hover thm-btn__hover--1"></span>
-                            <span className="thm-btn__hover thm-btn__hover--2"></span>
-                            <span className="thm-btn__hover thm-btn__hover--3"></span>
-                            <span className="thm-btn__hover thm-btn__hover--4"></span>
-                          </span>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </form>
-              </div>
-            </div>
-            {/* End Testimonials One Form */}
-
             {/* Start Testimonials One Content */}
             <div className="col-xl-8">
               <div className="testimonials-one__content">
@@ -158,10 +117,15 @@ export default function Testimonial() {
                 </div>
                 <Swiper
                   spaceBetween={30}
-                  slidesPerView={3}
+                  slidesPerView={1}
                   loop={true}
                   pagination={{ clickable: true }}
-                  autoplay={{ delay: 5000 }}
+                  // Enable autoplay
+                  modules={[Autoplay, Pagination]}
+                  autoplay={{
+                    delay: 3000,
+                    disableOnInteraction: false,
+                  }}
                   breakpoints={{
                     0: { slidesPerView: 1, spaceBetween: 0 },
                     375: { slidesPerView: 1, spaceBetween: 30 },

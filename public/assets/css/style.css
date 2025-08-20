@@ -341,6 +341,7 @@ h6 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  border-radius: 8px;
   overflow: hidden;
   padding-top: 7.5px;
   padding-left: 30px;
@@ -353,7 +354,6 @@ h6 {
   font-weight: 700;
   text-transform: uppercase;
   font-family: var(--thm-font);
-  border-radius: 0px;
   -webkit-transition: all 0.3s linear;
   -o-transition: all 0.3s linear;
   transition: all 0.3s linear;
@@ -6164,7 +6164,6 @@ Faq Page
   .banner-one__content-left h2 {
     font-size: 46px;
     line-height: 64px;
-  
   }
 
   .banner-two .shape1 {
@@ -6338,3 +6337,6 @@ Faq Page
     padding: 271px 0px 150px;
   }
 }
+/* f */
+
+

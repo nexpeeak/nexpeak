@@ -43,7 +43,7 @@ const ServiceDetails = ({ serviceDetails }) => {
               </div>
 
               {/* Contact Us */}
-              <div className="sidebar__single sidebar__single-contact text-center">
+              <div className="text-center sidebar__single sidebar__single-contact">
                 <div
                   className="sidebar__single-contact-pattern"
                   style={{

@@ -43,7 +43,7 @@ export default function Header1({
                     <div className="header-contact-box">
                       <p>
                         <span className="icon-icon-6"></span>
-                        <a href="tel:123456789">+2 854 3605 86</a>
+                        <a href="tel:+918799762249">+91 8799762249</a>
                       </p>
                     </div>
                     {/* The search box div has been removed */}

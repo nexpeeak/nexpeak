@@ -6,19 +6,19 @@ import CountUp from 'react-countup';
 const defaultCounters = [
     {
         icon: 'icon-icon-13',
-        count: 245,
+        count: 45,
         suffix: '+',
         text: 'Global total Platform',
     },
     {
         icon: 'icon-icon-14',
-        count: 45,
-        suffix: 'k+',
+        count: 900,
+        suffix: '+',
         text: 'Total Case Solved',
     },
     {
         icon: 'icon-icon-15',
-        count: 212,
+        count: 24,
         suffix: '+',
         text: 'Global Award win',
     },
