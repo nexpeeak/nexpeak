@@ -140,7 +140,7 @@ const Footer = () => {
                 </Link>
               </li>
               <li className="list-inline-item me-4">
-                <Link href="/terms" className="text-decoration-none">
+                <Link href="/terms-condition" className="text-decoration-none">
                   Terms & Conditions
                 </Link>
               </li>
