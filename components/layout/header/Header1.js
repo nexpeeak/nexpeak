@@ -27,7 +27,7 @@ export default function Header1({
                     <div className="logo-box-one">
                       <Link href="/">
                         <img
-                          src="assets/img/logo.png"
+                          src="/images/logo.png"
                           alt="Logo"
                           style={{ height: '70px', width: '185px' }}
                         />

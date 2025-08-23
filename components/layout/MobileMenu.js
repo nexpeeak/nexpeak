@@ -34,7 +34,7 @@ const MobileMenu = ({ isSidebar, handleMobileMenu, handleSidebar }) => {
           </div>
           <div className="nav-logo">
             <Link href="/">
-              <img src="/assets/img/resource/logo-3.png" alt="Logo" />
+              <img src="/images/logo.png" alt="Logo" />
             </Link>
           </div>
           <div className="menu-outer">

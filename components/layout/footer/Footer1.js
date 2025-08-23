@@ -18,12 +18,12 @@ const Footer = () => {
       <div className="container py-5">
         <div className="row">
           {/* Logo & Description */}
-          <div className="col-lg-4 col-md-6 mb-4">
+          <div className="mb-4 col-lg-4 col-md-6">
             <div className="footer-widget logo-widget">
               <Link href="/">
                 {/* Replace with your actual logo path */}
                 <Image
-                  src="/assets/img/logo.png"
+                  src="/images/logo.png"
                   alt="Nexpeak Logo"
                   width={160}
                   className='bg-white'
@@ -35,7 +35,7 @@ const Footer = () => {
                 and dedicated advocacy. We provide clear, strategic guidance
                 tailored to your unique needs.
               </p>
-              <div className="social-links mt-4">
+              <div className="mt-4 social-links">
                 <Link href="#" aria-label="Facebook">
                   <Facebook size={24} className="social-icon" />
                 </Link>
@@ -53,7 +53,7 @@ const Footer = () => {
           </div>
 
           {/* Quick Links */}
-          <div className="col-lg-2 col-md-6 mb-4">
+          <div className="mb-4 col-lg-2 col-md-6">
             <div className="footer-widget links-widget">
               <h4 className="footer-heading">Our Services</h4>
               <ul className="list-unstyled">
@@ -77,7 +77,7 @@ const Footer = () => {
           </div>
 
           {/* Contact Information */}
-          <div className="col-lg-3 col-md-6 mb-4">
+          <div className="mb-4 col-lg-3 col-md-6">
             <div className="footer-widget contact-widget">
               <h4 className="footer-heading">Contact Us</h4>
               <ul className="list-unstyled">
@@ -110,7 +110,7 @@ const Footer = () => {
           </div>
 
           {/* Business Hours */}
-          <div className="col-lg-3 col-md-6 mb-4">
+          <div className="mb-4 col-lg-3 col-md-6">
             <div className="footer-widget hours-widget">
               <h4 className="footer-heading">Business Hours</h4>
               <ul className="list-unstyled">
@@ -132,8 +132,8 @@ const Footer = () => {
 
         {/* Footer Bottom Section */}
         <div className="row align-items-center">
-          <div className="col-md-6 text-center text-md-start mb-3 mb-md-0">
-            <ul className="list-inline mb-0">
+          <div className="mb-3 text-center col-md-6 text-md-start mb-md-0">
+            <ul className="mb-0 list-inline">
               <li className="list-inline-item me-4">
                 <Link href="/privacy-policy" className="text-decoration-none">
                   Privacy Policy
@@ -151,7 +151,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="col-md-6 text-center text-md-end">
+          <div className="text-center col-md-6 text-md-end">
             <p className="mb-0">
               &copy; 2025 Nexpeak. All rights reserved. Designed by{' '}
               <a

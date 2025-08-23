@@ -3,90 +3,89 @@ import React from 'react';
 import Layout from '@/components/layout/Layout';
 import CtaOne from '@/components/common/CtaOne';
 
-
 const TeamSection = () => {
   const teamMembers = [
     {
       name: 'Shivangi Nigam',
       position: 'Founder & Managing Partner',
-      image: '/images/team/shivangi.png',
+      image: '/images/team/shivangi.jpeg',
       quote:
         'Shivangi is an exceptional leader, providing unmatched expertise in corporate law.',
     },
     {
       name: 'Adv. TUSHAR MISTRA',
       position: 'Corporate & Commercial Litigation',
-      image: '/images/team/tushar-mistra.png',
+      image: '/images/team/tushar-mistra.jpg',
       quote:
         "Adv. Tushar Mistra's expertise in corporate litigation has been instrumental in our success.",
     },
     {
       name: 'ANU GUPTA',
       position: 'Patent Agent & IPR strategist',
-      image: '/images/team/anu-gupta.png',
+      image: '/images/team/anu-gupta.jpeg',
       quote:
         "As a patent agent, I've found Nexpeak's legal support deeply aligned with innovation protection. Their clarity in IP strategy is unmatched.",
     },
     {
       name: 'Naunihal Yadav',
       position: 'Corporate & Commercial Litigation',
-      image: '/images/team/naunihal-yadav.png',
+      image: '/images/team/naunihal.jpeg',
       quote:
         "Naunihal's strategic thinking in commercial litigation is unmatched and highly effective.",
     },
     {
       name: 'CA RAVINDER VISHNALYA',
       position: 'Taxation and Regulatory Compliances',
-      image: '/images/team/ravinder.png',
+      image: '/images/team/ravinder.jpeg',
       quote:
         "Nexpeak's expertise in tax and compliance has streamlined our processes. Their precision and timely advice ensure we're always on the right side of the law.",
     },
     {
       name: 'Adv. Satyadev Prakash',
       position: 'Corporate & Commercial Litigation',
-      image: '/images/team/sathyadev.png',
+      image: '/images/team/sathyadev.jpeg',
       quote:
         'Adv. Satyadev Prakash has a deep understanding of corporate law, ensuring our cases are handled with precision.',
     },
     {
       name: 'Shivangi Shukla',
       position: 'Associate',
-      image: '/images/team/shivangi-shukla.png',
+      image: '/images/team/shivangi-shukla.jpeg',
       quote:
         "Shivangi's passion for law and client-first approach make her an invaluable asset to the firm.",
     },
     {
       name: 'Prubhleen Kaur',
       position: 'Corporate Lawyer',
-      image: '/images/team/prubhleen.jpg',
+      image: '/images/team/prubhleen.jpeg',
       quote:
         "Prubhleen's corporate law expertise has been crucial in navigating complex legal matters.",
     },
     {
       name: 'Ayushi Kasaudhan',
       position: 'Corporate Lawyer',
-      image: '/images/team/ayushi.png',
+      image: '/images/team/ayushi.jpeg',
       quote:
         'Ayushi brings a meticulous approach to corporate legal matters, always ensuring client satisfaction.',
     },
     {
       name: 'LAKSHAY BHATT',
       position: 'Associate',
-      image: '/images/team/lakshay.png',
+      image: '/images/team/lakshay.jpg',
       quote:
         "Lakshay's sharp legal acumen and dedication make him a valuable asset in delivering effective legal solutions.",
     },
     {
       name: 'SAI ABHINAV',
       position: 'Paralegal',
-      image: '/images/team/abhinav.jpg',
+      image: '/images/team/abhinav.jpeg',
       quote:
         "Sai's attention to detail and dedication are unmatched in his role as a paralegal.",
     },
     {
       name: 'Bhumika',
       position: 'Administrator',
-      image: '/images/team/bhumika.png',
+      image: '/images/team/bhumika.jpeg',
       quote:
         "Bhumika's organizational skills and efficiency ensure the smooth running of the office.",
     },
@@ -220,7 +219,7 @@ const TeamSection = () => {
 
         .front {
           background-size: cover;
-          background-position: center center;
+          background-position: center top;
           background-repeat: no-repeat;
           display: flex;
           align-items: flex-end;
@@ -323,6 +322,7 @@ const TeamSection = () => {
           width: 100%;
           height: 100%;
           object-fit: cover;
+          object-position: center top;
         }
 
         .author-details {
@@ -351,7 +351,7 @@ const TeamSection = () => {
           }
 
           .team-card {
-            height: 350px;
+            height: 380px;
           }
 
           .content-box {
@@ -365,6 +365,10 @@ const TeamSection = () => {
           .back-content blockquote p {
             font-size: 14px;
           }
+
+          .front {
+            background-position: center 20%;
+          }
         }
 
         @media (max-width: 768px) {
@@ -373,15 +377,15 @@ const TeamSection = () => {
           }
 
           .team-card {
-            height: 320px;
+            height: 380px;
           }
 
           .content-box h3 {
-            font-size: 16px;
+            font-size: 19px;
           }
 
           .content-box p {
-            font-size: 13px;
+            font-size: 14px;
           }
 
           .back-content {
@@ -389,7 +393,66 @@ const TeamSection = () => {
           }
 
           .back-content blockquote p {
+            font-size: 15px;
+          }
+
+          .author-image {
+            width: 55px;
+            height: 55px;
+          }
+
+          .author-details .name {
+            font-size: 15px;
+          }
+
+          .author-details .position {
             font-size: 13px;
+          }
+
+          .front {
+            background-position: center 15%;
+          }
+        }
+
+        @media (max-width: 576px) {
+          .col-sm-6 {
+            margin-bottom: 20px;
+          }
+
+          .team-card {
+            height: 360px;
+          }
+
+          .content-box {
+            padding: 22px 18px;
+          }
+
+          .content-box h3 {
+            font-size: 24px;
+            margin-bottom: 8px;
+          }
+
+          .content-box p {
+            font-size: 18px;
+            line-height: 1.4;
+          }
+
+          .front {
+            background-position: center 10%;
+          }
+
+          .back-content {
+            padding: 18px;
+          }
+
+          .back-content blockquote p {
+            font-size: 18px;
+            line-height: 1.5;
+          }
+
+          .author-info {
+            margin-top: 20px;
+            gap: 12px;
           }
 
           .author-image {
@@ -398,17 +461,37 @@ const TeamSection = () => {
           }
 
           .author-details .name {
-            font-size: 14px;
+            font-size: 18px;
           }
 
           .author-details .position {
-            font-size: 12px;
+            font-size: 14px;
           }
         }
 
-        @media (max-width: 576px) {
-          .col-sm-6 {
-            margin-bottom: 20px;
+        @media (max-width: 480px) {
+          .team-card {
+            height: 340px;
+          }
+
+          .content-box {
+            padding: 20px 16px;
+          }
+
+          .content-box h3 {
+            font-size: 21px;
+          }
+
+          .content-box p {
+            font-size: 18px;
+          }
+
+          .front {
+            background-position: center 5%;
+          }
+
+          .back-content blockquote p {
+            font-size: 18px;
           }
         }
       `}</style>
