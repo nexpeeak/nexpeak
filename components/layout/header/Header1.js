@@ -40,13 +40,7 @@ export default function Header1({
                   </div>
 
                   <div className="main-header-one__right">
-                    <div className="header-contact-box">
-                      <p>
-                        <span className="icon-icon-6"></span>
-                        <a href="tel:+918799762249">+91 8799762249</a>
-                      </p>
-                    </div>
-                    {/* The search box div has been removed */}
+                    
                     <div className="btn-box">
                       <Link href="/contact" className="thm-btn">
                         Get a Appointment

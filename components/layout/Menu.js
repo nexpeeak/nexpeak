@@ -3,10 +3,10 @@ import Link from 'next/link';
 export default function Menu() {
   return (
     <ul className="main-menu__list">
-      <li className="">
+      <li >
         <Link href="/">Home</Link>
       </li>
-      <li>
+      <li >
         <Link href="/about">About Us</Link>
       </li>
       <li>
@@ -15,6 +15,9 @@ export default function Menu() {
       </li>
       <li>
         <Link href="/team">Teams</Link>
+      </li>
+      <li>
+        <Link href="/pricing">Pricing</Link>
       </li>
       <li>
         <Link href="/contact">Contact</Link>

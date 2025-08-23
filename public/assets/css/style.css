@@ -52,7 +52,6 @@
 ===============================*/
 :root {
   --thm-primary: #008bbf;
-  /* --thm-primary: #BF5E44; */
   --thm-primary-rgb: 191, 94, 68;
   --thm-white: #ffffff;
   --thm-white-rgb: 255, 255, 255;
@@ -3918,6 +3917,7 @@ Pricing One
 
 .pricing-one__single .table-content ul li {
   position: relative;
+  text-align: left;
   display: block;
   margin-bottom: 15px;
 }
@@ -3934,9 +3934,11 @@ Pricing One
 .pricing-one__single .table-content ul li p span {
   position: relative;
   display: inline-block;
-  color: var(--thm-gray);
-  font-size: 16px;
+  color: var(--thm-white);
+
   margin-right: 3px;
+  border-radius: 50%;
+  background-color: var(--thm-primary);
 }
 
 .pricing-one__single .table-footer {
@@ -6339,4 +6341,253 @@ Faq Page
 }
 /* f */
 
+
+.pricing-one {
+  position: relative;
+  display: block;
+  background: var(--thm-white);
+  padding: 120px 0px 90px;
+  z-index: 1;
+}
+
+.row.d-flex.align-items-stretch {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.col-xl-4.d-flex, .col-lg-4.d-flex {
+  display: flex;
+}
+
+.pricing-one__single {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: #faf8f4;
+  border: 1px solid #e8e4dd;
+  padding: 50px 45px;
+  margin-bottom: 30px;
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  overflow: hidden; /* Important for the ribbon */
+}
+
+.pricing-one__single:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Popular Ribbon Styling */
+
+.popular-ribbon {
+  position: absolute;
+  top: 15px;
+  right: -40px;
+  background-color: #bd3a3a;
+  color: var(--thm-white);
+  font-size: 14px;
+  font-weight: 600;
+  padding: 8px 40px;
+  transform: rotate(45deg);
+  z-index: 10;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.popular-ribbon span {
+  display: block;
+  font-family: inherit;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.pricing-one__single .table-header {
+  position: relative;
+  padding-top: 90px;
+  text-align: center;
+}
+
+.pricing-one__single .table-header .icon-box {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 190px;
+  height: 190px;
+  background: var(--thm-white);
+  border-radius: 50%;
+  z-index: 2;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.pricing-one__single .table-header .icon-box::before {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  bottom: 10px;
+  right: 10px;
+  background: #f4efe6;
+  border-radius: 50%;
+  content: '';
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+
+.pricing-one__single:hover .table-header .icon-box::before {
+  background: var(--thm-primary);
+}
+
+.pricing-one__single .table-header .icon-box span {
+  position: relative;
+  color: var(--thm-black);
+  font-size: 80px;
+  line-height: 80px;
+  z-index: 2;
+  transition: all 0.3s ease;
+}
+
+.pricing-one__single:hover .table-header .icon-box span {
+  color: var(--thm-white);
+}
+
+.pricing-one__single .table-header__inner {
+  position: relative;
+  background: #f4efe6;
+  padding: 122px 0px 21px;
+  border-radius: 5px;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.pricing-one__single .table-header__inner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0px;
+  border-radius: 5px;
+  background-color: var(--thm-primary);
+  transition: transform 0.5s ease;
+  transform-origin: bottom;
+  transform: scaleY(0);
+  z-index: -1;
+}
+
+.pricing-one__single:hover .table-header__inner::before {
+  transform: scaleY(1);
+}
+
+.pricing-one__single .table-header__inner .text-box {
+  position: relative;
+  z-index: 3;
+}
+
+.pricing-one__single .table-header__inner .text-box h3 {
+  font-size: 22px;
+  line-height: 32px;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-bottom: 6px;
+  transition: all 0.3s linear;
+}
+
+.pricing-one__single:hover .table-header__inner .text-box h3 {
+  color: var(--thm-white);
+}
+
+.pricing-one__single .table-header__inner .text-box h2 {
+  color: var(--thm-primary);
+  font-size: 50px;
+  line-height: 65px;
+  font-weight: 400;
+  transition: all 0.3s linear;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.pricing-one__single:hover .table-header__inner .text-box h2 {
+  color: var(--thm-white);
+}
+
+/* Specific styling for the price duration */
+.pricing-one__single .table-header__inner .text-box h2 small {
+  font-size: 18px; /* Smaller font size */
+  font-weight: 400;
+  color: var(--thm-gray); /* Different color for duration */
+  margin-left: 5px;
+  transition: all 0.3s linear;
+  line-height: 1; /* Aligns it to the bottom of the line */
+}
+
+.pricing-one__single:hover .table-header__inner .text-box h2 small {
+  color: var(--thm-white);
+}
+
+.pricing-one__single .table-content {
+  position: relative;
+  margin-top: 37px;
+  flex-grow: 1;
+}
+
+.pricing-one__single .table-content ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.pricing-one__single .table-content ul li {
+  position: relative;
+  text-align: left;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: flex-start; /* Aligns items to the top for multi-line text */
+  transition: transform 0.2s ease-in-out;
+}
+
+.pricing-one__single .table-content ul li:hover {
+  transform: translateX(5px);
+}
+
+.pricing-one__single .table-content ul li p {
+  margin: 0;
+  text-transform: capitalize;
+  color: var(--thm-gray);
+  font-size: 16px;
+  margin-left: 10px;
+  flex-grow: 1;
+}
+
+.pricing-one__single .table-content ul li span {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  color: var(--thm-white);
+  border-radius: 50%;
+  background-color: var(--thm-primary);
+  flex-shrink: 0;
+}
+
+.pricing-one__single .table-content ul li span svg {
+  width: 14px;
+  height: 14px;
+}
+
+.pricing-one__single .table-footer {
+  position: relative;
+  margin-top: auto;
+  text-align: center;
+}
+
+
+/* Team */
 
