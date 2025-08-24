@@ -1,9 +1,9 @@
 const CtaOne = ({ queryText, ctaTitle }) => {
     return (
       <section className="cta-one">
-        <div className="cta-one__bg" style={{ backgroundImage: `url(/assets/img/background/cta-v1-bg.jpg)` }}></div>
+        <div className="cta-one__bg" style={{ backgroundImage: `url(/images/services/cta.jpg)` }}></div>
         <div className="container">
-          <div className="cta-one__inner text-center">
+          <div className="text-center cta-one__inner">
             <div className="cta-one__icon">
               <img src="/assets/img/icon/cta-icon.png" alt="" />
             </div>

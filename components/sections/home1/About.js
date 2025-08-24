@@ -16,7 +16,7 @@ export default function About() {
     learnMoreLink: '/about',
     signatureImage: '/assets/img/about/signature1.png',
     ceoName: 'Hector Scudder, CEO',
-    aboutImage: '/assets/img/about/about-v1-img1.jpg',
+    aboutImage: '/images/home/about.jpg',
     counters: [
       {
         icon: 'icon-icon-13',

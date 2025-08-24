@@ -7,7 +7,7 @@ export default function ChooseOne() {
   // State for dynamic data (e.g., dynamic images, text, links)
   const [chooseContent, setChooseContent] = useState({
     shapeImage: "/assets/img/shape/why-choose-v1-shape1.png",
-    chooseImage: "/assets/img/resource/why-choose-v1-img1.jpg",
+    chooseImage: "/images/home/why.jpg",
     sectionTitleIcon: "/assets/img/icon/sec-title-img1.png",
     sectionTitleText: "why choose nexpeak",
     sectionMainTitle: "turning challenges into opportunities",

@@ -21,7 +21,7 @@ export default function Home() {
         <About />
         <ChooseOne />
         <ServicesOne />
-        <Brand />
+        {/* <Brand /> */}
        
         {/* <CaseOne />  */}
         <Testimonial />

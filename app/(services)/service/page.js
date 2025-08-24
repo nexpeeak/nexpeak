@@ -21,7 +21,7 @@ import Layout from '@/components/layout/Layout';
 const services = [
   {
     id: 1,
-    imgSrc: '/assets/img/service/services-v2-img1.jpg',
+    imgSrc: '/images/services/startup.jpg',
     icon: 'icon-icon-30',
     title: 'Startup Advisory & Incorporation',
     description:
@@ -30,7 +30,7 @@ const services = [
   },
   {
     id: 2,
-    imgSrc: '/assets/img/service/services-v2-img2.jpg',
+    imgSrc: 'images/services/contract.jpg',
     icon: 'icon-icon-31',
     title: 'Contract Drafting & Negotiation',
     description:
@@ -39,7 +39,7 @@ const services = [
   },
   {
     id: 3,
-    imgSrc: '/assets/img/service/services-v2-img3.jpg',
+    imgSrc: 'images/services/brand-protection.jpg',
     icon: 'icon-icon-32',
     title: 'Intellectual Property & Brand Protection',
     description:
@@ -48,7 +48,7 @@ const services = [
   },
   {
     id: 4,
-    imgSrc: '/assets/img/service/services-v2-img4.jpg',
+    imgSrc: 'images/services/compliance-managment.jpg',
     icon: 'icon-icon-33',
     title: 'Secretarial Compliance Management',
     description:
@@ -57,7 +57,7 @@ const services = [
   },
   {
     id: 5,
-    imgSrc: '/assets/img/service/services-v2-img5.jpg',
+    imgSrc: 'images/services/taxation.jpg',
     icon: 'icon-icon-38',
     title: 'Taxation & Financial Compliance',
     description:
@@ -66,7 +66,7 @@ const services = [
   },
   {
     id: 6,
-    imgSrc: '/assets/img/service/services-v2-img6.jpg',
+    imgSrc: 'images/services/labour.jpg',
     icon: 'icon-icon-39',
     title: 'Employment & Labour Law Advisory',
     description:
@@ -75,7 +75,7 @@ const services = [
   },
   {
     id: 7,
-    imgSrc: '/assets/img/service/services-v2-img6.jpg',
+    imgSrc: 'images/services/dispute.jpg',
     icon: Gavel,
     title: 'Dispute Resolution & Litigation',
     description:
@@ -84,7 +84,7 @@ const services = [
   },
   {
     id: 8,
-    imgSrc: '/assets/img/service/services-v2-img6.jpg',
+    imgSrc: 'images/services/esg-csr.jpg',
     icon: Leaf,
     title: 'ESG & CSR Compliance Law',
     description:
@@ -93,7 +93,7 @@ const services = [
   },
   {
     id: 9,
-    imgSrc: '/assets/img/service/services-v2-img6.jpg',
+    imgSrc: 'images/services/data-protection.jpg',
     icon: Shield,
     title: 'Data Protection & Technology Law',
     description:
@@ -102,7 +102,7 @@ const services = [
   },
   {
     id: 10,
-    imgSrc: '/assets/img/service/services-v2-img6.jpg',
+    imgSrc: 'images/services/ecommerce.jpg',
     icon: ShoppingCart,
     title: 'Digital Business & E-Commerce Law',
     description:
@@ -111,7 +111,7 @@ const services = [
   },
   {
     id: 11,
-    imgSrc: '/assets/img/service/services-v2-img6.jpg',
+    imgSrc: 'images/services/ai-compliance.jpg',
     icon: Cpu,
     title: 'AI & Emerging Technology Compliance',
     description:
@@ -121,7 +121,7 @@ const services = [
   
   {
     id: 12,
-    imgSrc: '/assets/img/service/services-v2-img6.jpg',
+    imgSrc: 'images/services/mergers.jpg',
     icon: Layers,
     title: 'Mergers & Acquisitions (M&A)',
     description:
@@ -282,7 +282,7 @@ export default function Home() {
             <div
               className="video-one__bg"
               style={{
-                backgroundImage: 'url(/assets/img/background/video-v1-bg.jpg)',
+                backgroundImage: 'url(/images/services/cta.jpg)',
               }}
             ></div>
             <div className="container">

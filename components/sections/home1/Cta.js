@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 // Dynamic data for CTA section
 const ctaData = {
-  backgroundImage: "/assets/img/background/cta-v1-bg.jpg",
+  backgroundImage: "/images/home/cta.jpg",
   iconSrc: "/assets/img/icon/cta-icon.png",
   buttonText: "contact with us",
   buttonLink: "/contact", // Use Next.js Link for internal routing
@@ -20,7 +20,7 @@ export default function Cta() {
           style={{ backgroundImage: `url(${ctaData.backgroundImage})` }}
         ></div>
         <div className="container">
-          <div className="cta-one__inner text-center">
+          <div className="text-center cta-one__inner">
             <div className="cta-one__icon">
               <img
                 src={ctaData.iconSrc}

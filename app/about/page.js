@@ -20,14 +20,14 @@ export default function Home() {
                   <div className="about-three__img">
                     <div className="about-three__img-inner">
                       <img
-                        src="/assets/img/about/about-v3-img1.jpg"
+                        src="/images/about/about.jpg"
                         alt="About Image"
                       />
 
                       <div className="overlay-content">
                         <div className="counter-box">
                           <h2 className="count">
-                            <CountUp end={5} />
+                            <CountUp end={5} /><span>+</span>
                           </h2>
                         </div>
                         <div className="text-box">
@@ -63,7 +63,7 @@ export default function Home() {
 
                     <div className="about-three__content-text">
                       <p>
-                        For more than 5 years, Lavale has been helping
+                        For more than 5 years, Nexpeak has been helping
                         businesses and individuals navigate legal challenges
                         with clarity and confidence. Our focus is on simplifying
                         complex laws, safeguarding your interests, and building
@@ -149,7 +149,7 @@ export default function Home() {
                     </div>
                     <div className="company-history__single-img">
                       <img
-                        src="/assets/img/resource/company-history-img1.jpg"
+                        src="/images/about/journey.jpg"
                         alt="Start Journey"
                       />
                     </div>
@@ -162,7 +162,7 @@ export default function Home() {
                   <div className="text-center company-history__single style2">
                     <div className="company-history__single-img">
                       <img
-                        src="/assets/img/resource/company-history-img2.jpg"
+                        src="/images/about/growth.jpg"
                         alt="Firm of the Year"
                       />
                     </div>
@@ -170,7 +170,7 @@ export default function Home() {
                       <div className="date-box">2021</div>
                       <h2>Growing Recognition</h2>
                       <p>
-                        Within two years, Lavale became a trusted name, known
+                        Within two years, Nexpeak became a trusted name, known
                         for client-focused service and practical strategies.
                       </p>
                     </div>
@@ -184,13 +184,13 @@ export default function Home() {
                     <div className="company-history__single-content">
                       <h2>Expansion</h2>
                       <p>
-                       To meet demand, Lavale expanded its team and expertise, strengthening services in corporate, compliance, and intellectual property law.
+                       To meet demand, Nexpeak expanded its team and expertise, strengthening services in corporate, compliance, and intellectual property law.
                       </p>
                       <div className="date-box">2023</div>
                     </div>
                     <div className="company-history__single-img">
                       <img
-                        src="/assets/img/resource/company-history-img3.jpg"
+                        src="/images/about/expansion.jpg"
                         alt="Open Branch"
                       />
                     </div>
@@ -203,7 +203,7 @@ export default function Home() {
                   <div className="text-center company-history__single style2">
                     <div className="company-history__single-img">
                       <img
-                        src="/assets/img/resource/company-history-img4.jpg"
+                        src="/images/about/excellence.jpg"
                         alt="Global Awards"
                       />
                     </div>
@@ -211,7 +211,7 @@ export default function Home() {
                       <div className="date-box">2025</div>
                       <h2>5+ Years of Excellence</h2>
                       <p>
-                       With over five years of experience, Lavale continues to deliver innovative solutions, empowering clients with confidence.
+                       With over five years of experience, Nexpeak continues to deliver innovative solutions, empowering clients with confidence.
                       </p>
                     </div>
                   </div>
