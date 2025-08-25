@@ -1,39 +1,46 @@
-"use client"; // Ensures the component runs on the client side
+'use client'; // Ensures the component runs on the client side
 
-import Link from "next/link";
-import { useState } from "react";
+import Link from 'next/link';
+import { useState } from 'react';
 
 export default function ServicesOne() {
   // State for dynamic data (e.g., dynamic images, text, links)
   const [servicesContent, setServicesContent] = useState({
-    backgroundImage: "/images/home/services.jpg",
-    sectionTitleIcon: "/assets/img/icon/sec-title-img1.png",
-    sectionTitleText: "popular services",
-    sectionMainTitle: "Everyone deserves legal best assistance",
+    backgroundImage: '/images/home/services.jpg',
+    sectionTitleIcon: '/assets/img/icon/sec-title-img1.png',
+    sectionTitleText: 'popular services',
+    sectionMainTitle: 'Everyone deserves legal best assistance',
     services: [
       {
         id: 1,
-        title: "Startup Advisory & Incorporation",
-        description: "Business setup, compliance, and registration.",
-        link: "/startup-advisory",
+        title: 'Startup Advisory & Incorporation',
+        description: 'Business setup, compliance, and registration.',
+        link: '/startup-advisory',
       },
       {
         id: 2,
-        title: "Contract Drafting & Negotiation",
-        description: "Strong agreements for smooth business deals.",
-        link: "/contract-drafting",
+        title: 'Contract Drafting & Negotiation',
+        description: 'Strong agreements for smooth business deals.',
+        link: '/contract-drafting',
       },
       {
         id: 3,
-        title: "IPR & Brand Protection",
-        description: "Safeguard trademarks, copyrights, and patents.",
-        link: "/intellectual-property",
+        title: 'IPR & Brand Protection',
+        description: 'Safeguard trademarks, copyrights, and patents.',
+        link: '/intellectual-property',
       },
       {
         id: 4,
-        title: "Regulatory & Compliance",
-        description: "Stay compliant with ever-changing laws.",
-        link: "/compliance-management",
+        title: 'Regulatory & Compliance',
+        description: 'Stay compliant with ever-changing laws.',
+        link: '/compliance-management',
+      },
+      {
+        id: 5,
+        title: 'Dispute Resolution and Litigation',
+        description:
+          'Expert legal support to resolve disputes and represent you effectively.',
+        link: '/dispute-resolution',
       },
     ],
   });
@@ -53,7 +60,10 @@ export default function ServicesOne() {
             <div className="sec-title">
               <div className="sub-title">
                 <div className="icon">
-                  <img src={servicesContent.sectionTitleIcon} alt="Section Icon" />
+                  <img
+                    src={servicesContent.sectionTitleIcon}
+                    alt="Section Icon"
+                  />
                 </div>
                 <div className="text">
                   <p>{servicesContent.sectionTitleText}</p>
@@ -67,10 +77,10 @@ export default function ServicesOne() {
                 <li key={service.id}>
                   <div className="content-box">
                     <div className="count-box">
-                      <h2>{service.id.toString().padStart(2, "0")}/</h2>
+                      <h2>{service.id.toString().padStart(2, '0')}/</h2>
                     </div>
                     <div className="text-box">
-                      <h2 style={{fontSize:"28px"}}>
+                      <h2 style={{ fontSize: '28px' }}>
                         <Link href={service.link}>{service.title}</Link>
                       </h2>
                       <p>{service.description}</p>
