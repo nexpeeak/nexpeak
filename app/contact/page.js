@@ -75,7 +75,7 @@ export default function Home() {
                           </h2>
                           <h2>
                             <a href="mailto:yourmail@email.com">
-                              info@nexpeak.in
+                             nexpeaklegal@gmail.com
                             </a>
                           </h2>
                         </div>
@@ -100,11 +100,11 @@ export default function Home() {
                             </div>
                           </div>
                           <h2>
-                            <a href="tel:123456789">+91 8799762249</a>
+                            <a href="tel:123456789"> +91 9027667840</a>
                           </h2>
-                          <h2>
+                         {/*  <h2>
                             <a href="tel:123456789">+91 8799762249</a>
-                          </h2>
+                          </h2> */}
                         </div>
                       </div>
                     </div>

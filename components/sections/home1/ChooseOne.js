@@ -1,24 +1,25 @@
-"use client"; // Ensure the component runs on the client side
+'use client'; // Ensure the component runs on the client side
 
-import Link from "next/link";
-import { useState } from "react";
+import Link from 'next/link';
+import { useState } from 'react';
 
 export default function ChooseOne() {
-  // State for dynamic data (e.g., dynamic images, text, links)
   const [chooseContent, setChooseContent] = useState({
-    shapeImage: "/assets/img/shape/why-choose-v1-shape1.png",
-    chooseImage: "/images/home/why.jpg",
-    sectionTitleIcon: "/assets/img/icon/sec-title-img1.png",
-    sectionTitleText: "why choose nexpeak",
-    sectionMainTitle: "turning challenges into opportunities",
+    shapeImage: '/assets/img/shape/why-choose-v1-shape1.png',
+    chooseImage: '/images/home/why.jpg',
+    sectionTitleIcon: '/assets/img/icon/sec-title-img1.png',
+    sectionTitleText: 'why choose nexpeak',
+    sectionMainTitle: 'turning challenges into opportunities',
     chooseText:
-      "Business laws can feel overwhelming. At Nexpeak, we simplify the complex, protect your interests, and keep you focused on growth.",
+      'We believe the right legal partner doesn’t just solve problems—it unlocks possibilities. At Nexpeak, we combine expertise, innovation, and accessibility to give your business a competitive edge.',
     features: [
-      "Strong advocacy that defends your rights",
-      "Smart strategies that drive lasting success",
+      'Clarity Over Complexity – straightforward advice you can act on immediately',
+      'Future-Ready Approach – strategies built for growth, innovation, and scale',
+      'Always Within Reach – seamless online support and subscription plans',
+      'Global & Local Insight – experience spanning 40+ industries and international markets',
     ],
-    buttonText: "let’s work",
-    buttonLink: "#",
+    buttonText: 'let’s work',
+    buttonLink: '#',
   });
 
   return (
@@ -70,15 +71,17 @@ export default function ChooseOne() {
                     <p>{chooseContent.chooseText}</p>
                   </div>
                   <div className="why-choose-one__content-bottom">
-                    <ul>
+                    <div className="why-choose-one__features">
                       {chooseContent.features.map((feature, index) => (
-                        <li key={index}>
-                          <p>
-                            <span className="icon-icon-16"></span> {feature}
-                          </p>
-                        </li>
+                        <div
+                          className="why-choose-one__feature-item"
+                          key={index}
+                        >
+                          <span className="icon-icon-16"></span>
+                          <p>{feature}</p>
+                        </div>
                       ))}
-                    </ul>
+                    </div>
 
                     <div className="btn-box">
                       <Link className="thm-btn" href={chooseContent.buttonLink}>
@@ -103,6 +106,141 @@ export default function ChooseOne() {
         </div>
       </section>
       {/* End Why Choose One */}
+
+      <style jsx>{`
+        .why-choose-one {
+          position: relative;
+          display: block;
+          padding: 0px 0px 120px;
+        }
+        .why-choose-one .row {
+          align-items: center;
+        }
+        .why-choose-one__inner {
+          position: relative;
+          display: block;
+          background: var(--thm-gray-bg);
+          padding: 40px 40px 40px;
+          overflow: hidden;
+          z-index: 1;
+        }
+        .why-choose-one__inner .shape1 {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          z-index: -1;
+        }
+        .why-choose-one__img {
+          position: relative;
+          display: block;
+        }
+        .why-choose-one__img .inner {
+          position: relative;
+          display: block;
+          overflow: hidden;
+        }
+        .why-choose-one__img .inner img {
+          width: 100%;
+        }
+        .why-choose-one__content {
+          position: relative;
+          display: block;
+          margin-left: 40px;
+          max-width: 510px;
+          width: 100%;
+        }
+        .why-choose-one__content .sec-title {
+          padding-bottom: 29px;
+        }
+        .why-choose-one__content-text {
+          position: relative;
+          display: block;
+        }
+        .why-choose-one__content-text p {
+          margin: 0;
+        }
+        .why-choose-one__content-bottom {
+          position: relative;
+          display: block;
+          margin-top: 35px;
+        }
+        .why-choose-one__features {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          margin-bottom: 20px;
+        }
+  .why-choose-one__feature-item {
+  display: flex;
+  align-items: center; /* instead of flex-start */
+  gap: 12px; /* reduce gap slightly for better alignment */
+}
+
+        .why-choose-one__feature-item .icon-icon-16 {
+  color: var(--thm-primary);
+  font-size: 20px; /* slightly larger for balance */
+  line-height: 1; /* keeps it vertically centered */
+  flex-shrink: 0;
+}
+    .why-choose-one__feature-item p {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.5;
+  color: var(--thm-black);
+}
+        .why-choose-one__content-bottom .btn-box {
+          position: relative;
+          display: block;
+          margin-top: 41px;
+        }
+        .why-choose-one.style3 {
+          position: relative;
+          display: block;
+          background: var(--thm-black-bg);
+        }
+        .why-choose-one.style3 .why-choose-one__inner {
+          background: #0c192c;
+        }
+        .why-choose-one.style3 .sec-title .sub-title .text p {
+          color: #b3b7bb;
+        }
+        .why-choose-one.style3 .sec-title h2 {
+          color: var(--thm-white);
+        }
+        .why-choose-one.style3 .why-choose-one__content-text p {
+          color: #b3b7bb;
+        }
+        .why-choose-one.style3 .why-choose-one__feature-item p {
+          color: var(--thm-white);
+        }
+        .why-choose-one.style3 .why-choose-one__feature-item .icon-icon-16 {
+          color: var(--thm-primary);
+        }
+        .why-choose-one.style3 .why-choose-one__inner .shape1 {
+          opacity: 0.05;
+        }
+        @media only screen and (min-width: 1200px) and (max-width: 1400px) {
+          .why-choose-one__content {
+            margin-left: 20px;
+          }
+        }
+        @media only screen and (max-width: 1199px) {
+          .why-choose-one__img {
+            max-width: 600px;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+          }
+          .why-choose-one__content {
+            margin-left: 0px;
+            margin-top: 60px;
+            max-width: 100%;
+          }
+          .why-choose-one__inner {
+            padding: 40px 25px 40px;
+          }
+        }
+      `}</style>
     </>
   );
 }

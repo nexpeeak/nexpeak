@@ -1,51 +1,51 @@
-"use client"; // Add this line at the top to ensure the component runs on the client side
+'use client'; // Add this line at the top to ensure the component runs on the client side
 
-import Link from "next/link";
-import { useState } from "react";
+import Link from 'next/link';
+import { useState } from 'react';
 
 export default function FeautureOne() {
   // State for dynamic data (e.g., dynamic images, text, links)
   const [featureContent, setFeatureContent] = useState({
-    patternImage: "/assets/img/pattern/feauture-v1-pattern.png",
-    sectionTitleIcon: "/assets/img/icon/sec-title-img1.png",
-    sectionTitleText: "welcome to lavale",
-    sectionMainTitle: "our best features",
+    patternImage: '/assets/img/pattern/feauture-v1-pattern.png',
+    sectionTitleIcon: '/assets/img/icon/sec-title-img1.png',
+    sectionTitleText: 'welcome to Nexpeak',
+    sectionMainTitle: 'our best features',
     features: [
       {
-        icon: "icon-icon-9",
-        title: "Satisfied legal defense",
-        link: "/service", // Corrected link
-        btnText: "Read More",
-        shapeImage: "/assets/img/shape/feauture-v1-shape1.png",
-        animation: "fadeInLeft",
-        delay: "0ms",
+        icon: 'icon-icon-9',
+        title: 'Strategic Legal Partnership',
+        content:
+          'We go beyond legal advice—aligning our strategies with your long-term goals.',
+        shapeImage: '/assets/img/shape/feauture-v1-shape1.png',
+        animation: 'fadeInLeft',
+        delay: '0ms',
       },
       {
-        icon: "icon-icon-10",
-        title: "Legal advice service",
-        link: "/service", // Corrected link
-        btnText: "Read More",
-        shapeImage: "/assets/img/shape/feauture-v1-shape1.png",
-        animation: "fadeInRight",
-        delay: "100ms",
+        icon: 'icon-icon-11',
+        title: 'Expert Legal Counsel',
+        content:
+          'Highly skilled lawyers with deep experience across corporate and business law.',
+        shapeImage: '/assets/img/shape/feauture-v1-shape1.png',
+        animation: 'fadeInRight',
+        delay: '100ms',
       },
       {
-        icon: "icon-icon-11",
-        title: "High skilled lawyer",
-        link: "/service", // Corrected link
-        btnText: "Read More",
-        shapeImage: "/assets/img/shape/feauture-v1-shape1.png",
-        animation: "fadeInLeft",
-        delay: "200ms",
+        icon: 'icon-icon-10',
+        title: 'Proven Results & Trusted Defense',
+        content:
+          'A strong track record of protecting clients and achieving favorable outcomes.',
+        shapeImage: '/assets/img/shape/feauture-v1-shape1.png',
+        animation: 'fadeInLeft',
+        delay: '200ms',
       },
       {
-        icon: "icon-icon-12",
-        title: "Online client support",
-        link: "/service", // Corrected link
-        btnText: "Read More",
-        shapeImage: "/assets/img/shape/feauture-v1-shape1.png",
-        animation: "fadeInRight",
-        delay: "100ms",
+        icon: 'icon-icon-12',
+        title: 'Legal Subscription ',
+        content:
+        "Affordable, ongoing legal support to protect your business and financial capital wisely.",
+        shapeImage: '/assets/img/shape/feauture-v1-shape1.png',
+        animation: 'fadeInRight',
+        delay: '100ms',
       },
     ],
   });
@@ -59,7 +59,7 @@ export default function FeautureOne() {
           style={{ backgroundImage: `url(${featureContent.patternImage})` }}
         ></div>
         <div className="container">
-          <div className="sec-title text-center">
+          <div className="text-center sec-title">
             <div className="sub-title center">
               <div className="icon">
                 <img src={featureContent.sectionTitleIcon} alt="" />
@@ -88,13 +88,9 @@ export default function FeautureOne() {
                   </div>
 
                   <div className="feauture-one__single-content">
-                    <h2>
-                      <Link href={feature.link}>{feature.title}</Link>
-                    </h2>
+                    <h2>{feature.title}</h2>
                     <div className="btn-box">
-                      <Link href={feature.link}>
-                        {feature.btnText} <span className="icon-icon-8"></span>
-                      </Link>
+                      <span>{feature.content}</span>
                     </div>
                   </div>
                 </div>

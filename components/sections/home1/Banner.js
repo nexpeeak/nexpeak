@@ -7,7 +7,7 @@ export default function Banner() {
   // State for dynamic data (e.g., dynamic images or text)
   const [bannerContent, setBannerContent] = useState({
     description:
-      'At Nexpeak, we do more than provide legal services—we partner with you. We listen, understand your unique situation, and offer clear, compassionate guidance. Our goal is to empower you with informed decisions for the best possible outcome.',
+      'At Nexpeak, we’re redefining how businesses access legal services. As India’s first legal partner for enterprises of all sizes, we deliver cost-effective, accessible, and reliable solutions that cover every aspect of corporate law. With expertise across 40+ sectors, our team ensures your business is protected, compliant, and positioned for long-term success.',
     socialLinks: [
       { icon: 'icon-icon-1', url: '/link1' },
       { icon: 'icon-icon-2', url: '/link2' },
@@ -40,12 +40,17 @@ export default function Banner() {
             <div className="banner-one__content-inner">
               <div className="banner-one__content-left">
                 <h2>
-                  <span style={{color:'#008bbf',textDecoration:'underline'}}>Nexpeak: </span>For a Strategic, <br />
+                  <span
+                    style={{ color: '#008bbf', textDecoration: 'underline' }}
+                  >
+                    Nexpeak:{' '}
+                  </span>
+                  For a Strategic, <br />
                   Long-Term Legal Partner
                 </h2>
               </div>
               <div className="banner-one__content-right">
-                <p className='tw-text-red-500'>{bannerContent.description}</p>
+                <p className="tw-text-red-500">{bannerContent.description}</p>
                 <div className="btn-box">
                   <Link href="#">
                     Learn More <span className="icon-icon-8"></span>

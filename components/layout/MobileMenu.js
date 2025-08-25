@@ -78,17 +78,17 @@ const MobileMenu = ({ isSidebar, handleMobileMenu, handleSidebar }) => {
             <div className="icon-box">
               <span className="icon-icon-48"></span>
             </div>
-            <p><a href="tel:123456789">(629) 555-0129</a></p>
+            <p><a href="tel:+919027667840">+91 9027667840</a></p>
           </div>
 
           {/* Social Links */}
           <div className="social-links">
             <ul className="clearfix list-wrap">
-              <li><a href="#"><i className="fab fa-facebook-f"></i></a></li>
-              <li><a href="#"><i className="fab fa-twitter"></i></a></li>
-              <li><a href="#"><i className="fab fa-instagram"></i></a></li>
-              <li><a href="#"><i className="fab fa-linkedin-in"></i></a></li>
-              <li><a href="#"><i className="fab fa-youtube"></i></a></li>
+              <li><a href="https://www.facebook.com/nexpeaklawfirm"><i className="fab fa-facebook-f"></i></a></li>
+              <li><a href="
+https://www.instagram.com/nexpeaklawfirm/
+"><i className="fab fa-instagram"></i></a></li>
+              <li><a href="https://www.linkedin.com/company/nexpeaklawfirm/"><i className="fab fa-linkedin-in"></i></a></li>
             </ul>
           </div>
         </nav>

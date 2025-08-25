@@ -20,7 +20,7 @@ export default function Home() {
                   <div className="about-three__img">
                     <div className="about-three__img-inner">
                       <img
-                        src="/images/about/about.jpg"
+                        src="/images/about-1.jpeg"
                         alt="About Image"
                       />
 
@@ -57,43 +57,80 @@ export default function Home() {
                         </div>
                       </div>
                       <h2>
-                        Legal Expertise for <br />a Confident Future
+                     Legal Expertise for Business<br /> Growth & Confidence
                       </h2>
                     </div>
 
                     <div className="about-three__content-text">
                       <p>
-                        For more than 5 years, Nexpeak has been helping
-                        businesses and individuals navigate legal challenges
-                        with clarity and confidence. Our focus is on simplifying
-                        complex laws, safeguarding your interests, and building
-                        lasting solutions that allow you to grow without
-                        hesitation.
+                        For over 5 years, Nexpeak has empowered businesses and individuals to overcome legal challenges with clarity and confidence. We simplify the complexities of law, protect your interests, and create lasting solutions that give you the freedom to focus on growth.
                       </p>
                     </div>
 
-                    <div className="about-three__content-list">
-                      <ul>
-                        <li>
-                          <h3>
-                            <span className="icon-icon-16"></span>Dedicated to
-                            delivering justice with integrity
-                          </h3>
-                        </li>
-                        <li>
-                          <h3>
-                            <span className="icon-icon-16"></span>Success
-                            defined by the trust of our clients
-                          </h3>
-                        </li>
-                        <li>
-                          <h3>
-                            <span className="icon-icon-16"></span>Reliable
-                            expertise with proven results
-                          </h3>
-                        </li>
-                      </ul>
-                    </div>
+                  <div className="about-three__content-list" style={{ padding: 0, margin: 0 }}>
+  <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "15px" }}>
+    <li>
+      <h3
+        style={{
+          display: "flex",
+          alignItems: "center",
+          gap: "12px",
+          fontSize: "18px",
+          lineHeight: "1.5",
+          color: "var(--thm-black)",
+          margin: 0,
+        }}
+      >
+        <span
+          className="icon-icon-16"
+          style={{ color: "var(--thm-primary)", fontSize: "20px", lineHeight: 1, flexShrink: 0 }}
+        ></span>
+        Integrity at Every Step – committed to delivering justice with honesty and transparency
+      </h3>
+    </li>
+
+    <li>
+      <h3
+        style={{
+          display: "flex",
+          alignItems: "center",
+          gap: "12px",
+          fontSize: "18px",
+          lineHeight: "1.5",
+          color: "var(--thm-black)",
+          margin: 0,
+        }}
+      >
+        <span
+          className="icon-icon-16"
+          style={{ color: "var(--thm-primary)", fontSize: "20px", lineHeight: 1, flexShrink: 0 }}
+        ></span>
+        Trusted by Clients – success built on lasting relationships and proven results
+      </h3>
+    </li>
+
+    <li>
+      <h3
+        style={{
+          display: "flex",
+          alignItems: "center",
+          gap: "12px",
+          fontSize: "18px",
+          lineHeight: "1.5",
+          color: "var(--thm-black)",
+          margin: 0,
+        }}
+      >
+        <span
+          className="icon-icon-16"
+          style={{ color: "var(--thm-primary)", fontSize: "20px", lineHeight: 1, flexShrink: 0 }}
+        ></span>
+        Expertise You Can Rely On – practical guidance backed by deep legal experience
+      </h3>
+    </li>
+  </ul>
+</div>
+
 
                     <div className="about-three__content-btn">
                       <a className="thm-btn" href="#">
@@ -222,50 +259,11 @@ export default function Home() {
           </section>
           {/* End Company History */}
           <CounterOne />
-          {/* <CaseOne/> */}
-          {/* <TestimonialsTwo/> */}
-          {/*   <TeamOne 
-                    className="team-one team-one--about"
-                    sectionTitle="Experienced Attorneys"
-                    subTitle="Meet Our Lawyers"
-                    teamData={[
-                        {
-                        name: 'Pamela Lasen',
-                        position: 'Senior Partner',
-                        image: '/assets/img/team/team-v1-img1.png',
-                        social: [
-                            { url: '#', iconClass: 'icon-icon-4' },
-                            { url: '#', iconClass: 'icon-icon-3' },
-                            { url: '#', iconClass: 'icon-icon-2' },
-                            { url: '#', iconClass: 'icon-icon-1' },
-                        ]
-                        },
-                        {
-                        name: 'Beverly Daniels',
-                        position: 'Senior Partner',
-                        image: '/assets/img/team/team-v1-img2.png',
-                        social: [
-                            { url: '#', iconClass: 'icon-icon-4' },
-                            { url: '#', iconClass: 'icon-icon-3' },
-                            { url: '#', iconClass: 'icon-icon-2' },
-                            { url: '#', iconClass: 'icon-icon-1' },
-                        ]
-                        },
-                        {
-                        name: 'Fred Vaughan',
-                        position: 'Senior Partner',
-                        image: '/assets/img/team/team-v1-img3.png',
-                        social: [
-                            { url: '#', iconClass: 'icon-icon-4' },
-                            { url: '#', iconClass: 'icon-icon-3' },
-                            { url: '#', iconClass: 'icon-icon-2' },
-                            { url: '#', iconClass: 'icon-icon-1' },
-                        ]
-                        }
-                    ]}
-                /> */}
+          
         </div>
+        
       </Layout>
+      
     </>
   );
 }

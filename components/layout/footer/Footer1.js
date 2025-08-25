@@ -36,16 +36,14 @@ const Footer = () => {
                 tailored to your unique needs.
               </p>
               <div className="mt-4 social-links">
-                <Link href="#" aria-label="Facebook">
+                <Link href="https://www.facebook.com/nexpeaklawfirm" aria-label="Facebook">
                   <Facebook size={24} className="social-icon" />
                 </Link>
-                <Link href="#" aria-label="Twitter">
-                  <Twitter size={24} className="social-icon" />
-                </Link>
-                <Link href="#" aria-label="LinkedIn">
+               
+                <Link href="https://www.linkedin.com/company/nexpeaklawfirm/" aria-label="LinkedIn">
                   <Linkedin size={24} className="social-icon" />
                 </Link>
-                <Link href="#" aria-label="Instagram">
+                <Link href="https://www.instagram.com/nexpeaklawfirm/" aria-label="Instagram">
                   <Instagram size={24} className="social-icon" />
                 </Link>
               </div>
@@ -94,9 +92,9 @@ const Footer = () => {
                   Statesment House, Delhi 110001
                 </li>
                 <li>
-                  <a href="tel:+918799762249">
+                  <a href="tel:+919027667840">
                     <Phone size={20} className="icon me-2" />
-                    +91 8799762249
+                    +91 9027667840
                   </a>
                 </li>
                 <li>

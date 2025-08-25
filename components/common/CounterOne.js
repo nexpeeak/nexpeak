@@ -6,27 +6,27 @@ import CountUp from 'react-countup';
 const defaultCounters = [
     {
         icon: 'icon-icon-13',
-        count: 45,
+        count: 1500,
         suffix: '+',
-        text: 'Global total Platform',
+        text: 'Clients Served',
     },
     {
         icon: 'icon-icon-14',
-        count: 900,
-        suffix: '+',
-        text: 'Total Case Solved',
+        count: 99,
+        suffix: '%',
+        text: 'Compliance Success',
     },
     {
         icon: 'icon-icon-15',
-        count: 24,
+        count: 40,
         suffix: '+',
-        text: 'Global Award win',
+        text: 'Industries Covered',
     },
     {
         icon: 'icon-icon-29',
-        count: 122,
+        count: 200,
         suffix: '+',
-        text: 'Business Partners',
+        text: 'Subscriptions/Year',
     },
 ];
 
@@ -34,7 +34,7 @@ export default function CounterOne({ counters = defaultCounters }) {
     return (
         <>
             {/* Start Counter One */}
-            <section className="counter-one">
+            <section className="counter-one" style={{paddingBottom:"0"}}>
                 <div className="container">
                     <ul className="row">
                         {counters.map((counter, index) => (

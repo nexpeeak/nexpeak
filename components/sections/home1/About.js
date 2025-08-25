@@ -10,9 +10,9 @@ export default function About() {
   const [aboutContent, setAboutContent] = useState({
     sectionTitleIcon: '/assets/img/icon/sec-title-img1.png',
     sectionTitleText: 'welcome to Nexpeak',
-    sectionMainTitle: 'We Champion Your Rights, Relentlessly',
+    sectionMainTitle: 'Your Rights. Your Business. Our Relentless Commitment.',
     aboutText:
-      "At Nexpeak, we understand that legal matters can be incredibly stressful and often feel overwhelming. That's why we're not just your lawyers, we're your partners. We take the time to truly listen to your concerns, understand your unique circumstances, and provide clear, compassionate guidance every step of the way. Our priority is to empower you to make informed decisions and achieve the best possible outcome for your situation",
+      "At Nexpeak, we know legal challenges can feel overwhelming. That’s why we don’t just represent you—we partner with you. By listening closely and understanding your unique circumstances, we deliver clear, practical, and compassionate guidance. Our mission is simple: to protect your interests, empower your decisions, and secure the strongest possible outcome for your future.",
     learnMoreLink: '/about',
     signatureImage: '/assets/img/about/signature1.png',
     ceoName: 'Hector Scudder, CEO',
@@ -20,21 +20,21 @@ export default function About() {
     counters: [
       {
         icon: 'icon-icon-13',
-        count: 45,
+        count: 1500,
         suffix: '+',
-        title: 'Global total Platform',
+        title: 'Clients Serverd',
       },
       {
         icon: 'icon-icon-14',
-        count: 900,
-        suffix: '+',
-        title: 'Total Case Solved',
+        count: 99,
+        suffix: '%',
+        title: 'Compliance Success',
       },
       {
         icon: 'icon-icon-15',
-        count: 24,
+        count: 40,
         suffix: '+',
-        title: 'Global Award win',
+        title: 'Industries Covered',
       },
     ],
   });

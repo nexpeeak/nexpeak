@@ -31,9 +31,9 @@ export default function ServicesOne() {
       },
       {
         id: 4,
-        title: "Dispute Resolution & Litigation",
-        description: "Effective strategies to resolve conflicts.",
-        link: "/dispute-resolution",
+        title: "Regulatory & Compliance",
+        description: "Stay compliant with ever-changing laws.",
+        link: "/compliance-management",
       },
     ],
   });
