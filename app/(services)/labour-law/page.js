@@ -50,7 +50,7 @@ export default function Home() {
       { text: 'Labour Law Compliance Checklist', link: '/labour-checklist' },
       { text: 'POSH Policy Template', link: '/posh-template' },
     ],
-    mainImage: '/assets/img/service/services-v2-img6.jpg',
+    mainImage: '/images/services/hero.jpg',
     serviceTitle: 'Employment & Labour Law Advisory',
     serviceDescription1:
       'We provide expert legal advisory on all matters of employment and labour law. Our services include the drafting of comprehensive **HR policies** and **employee contracts**, conducting meticulous **labour audits** to ensure compliance, and structuring **benefits packages** that are both competitive and legally sound. We help you create a secure and fair work environment.',
@@ -65,7 +65,7 @@ export default function Home() {
       { icon: 'icon-icon-11', title: 'Risk-free labour audits' },
       { icon: 'icon-icon-12', title: 'Protected workplace environment' },
     ],
-    videoThumbnail: '/assets/img/service/service-details-img2.jpg',
+    videoThumbnail: '/images/services/herodown.jpg',
     videoId: 'dQw4w9WgXcQ',
     justiceTitle: 'Building a Stronger Workplace',
     justiceText1:
@@ -76,8 +76,8 @@ export default function Home() {
       'Navigating Labour Laws with Confidence',
     ],
     contentImgs3: [
-      '/assets/img/service/service-details-img3.jpg',
-      '/assets/img/service/service-details-img4.jpg',
+       '/images/services/services-1.jpg',
+      '/images/services/services-2.jpg',
     ],
     faqTitle: 'Frequently Asked Questions',
     faqIntro:

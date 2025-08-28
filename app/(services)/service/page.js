@@ -1,22 +1,13 @@
 'use client';
 
 import React, { useState } from 'react';
-import {
-  Gavel,
-  Leaf,
-  Shield,
-  ShoppingCart,
-  Cpu,
-  Layers,
-} from 'lucide-react';
-
+import { Gavel, Leaf, Shield, ShoppingCart, Cpu, Layers } from 'lucide-react';
 
 import ModalVideo from 'react-modal-video';
 import 'react-modal-video/css/modal-video.min.css';
 import ServicesTwo from '@/components/common/ServicesTwo';
 import AboutOne from '@/components/common/AboutOne';
 import Layout from '@/components/layout/Layout';
-
 
 const services = [
   {
@@ -118,7 +109,7 @@ const services = [
       'AI governance, blockchain, smart contracts, and compliance with evolving tech regulations.',
     link: '/ai-compliance',
   },
-  
+
   {
     id: 12,
     imgSrc: 'images/services/mergers.jpg',
@@ -129,8 +120,6 @@ const services = [
     link: '/mergers-acquisitions',
   },
 ];
-
-
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
@@ -211,7 +200,11 @@ export default function Home() {
 
                     <div className="success-one__content-text">
                       <p>
-                        At Nexpeak, we blend experience and innovation to simplify complex legal challenges. Our proven track record in compliance, contracts, and intellectual property ensures that your business is always protected and future-ready.
+                        At Nexpeak, we blend experience and innovation to
+                        simplify complex legal challenges. Our proven track
+                        record in compliance, contracts, and intellectual
+                        property ensures that your business is always protected
+                        and future-ready.
                       </p>
                     </div>
 
@@ -266,7 +259,7 @@ export default function Home() {
                 <div className="col-xl-7">
                   <div className="clearfix success-one__img">
                     <img
-                      src="/assets/img/resource/success-v1-img1.jpg"
+                      src="/images/services/strength.jpg"
                       alt="Success Image"
                     />
                   </div>

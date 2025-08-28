@@ -26,7 +26,7 @@ export default function Home() {
       { text: 'Tax Compliance Checklist', link: '/tax-checklist' },
       { text: 'Financial Regulations Guide', link: '/financial-guide' },
     ],
-    mainImage: '/assets/img/service/services-v2-img5.jpg',
+    mainImage: '/images/services/hero.jpg',
     serviceTitle: 'Taxation & Financial Compliance',
     serviceDescription1:
       'Our firm offers comprehensive legal support for all your **taxation and financial compliance** needs. We provide expert guidance on **GST, TDS, and corporate tax**, ensuring your business remains fully compliant with all fiscal regulations. Our services also extend to **payroll compliance**, meticulously handling all tax deductions and filings to avoid penalties.',
@@ -41,7 +41,7 @@ export default function Home() {
       { icon: 'icon-icon-11', title: 'Meticulous payroll compliance' },
       { icon: 'icon-icon-12', title: 'Risk-free financial operations' },
     ],
-    videoThumbnail: '/assets/img/service/service-details-img2.jpg',
+    videoThumbnail: '/images/services/herodown.jpg',
     videoId: 'dQw4w9WgXcQ',
     justiceTitle: 'Financial Integrity in Every Transaction',
     justiceText1:
@@ -52,8 +52,8 @@ export default function Home() {
       'Securing Your Financial Future',
     ],
     contentImgs3: [
-      '/assets/img/service/service-details-img3.jpg',
-      '/assets/img/service/service-details-img4.jpg',
+       '/images/services/services-1.jpg',
+      '/images/services/services-2.jpg',
     ],
     faqTitle: 'Frequently Asked Questions',
     faqIntro:

@@ -51,7 +51,7 @@ export default function Home() {
       { text: 'Startup Legal Checklist', link: '/startup-checklist' },
       { text: "Founder's Agreement Guide", link: '/founders-guide' },
     ],
-    mainImage: '/assets/img/service/services-v2-img1.jpg',
+    mainImage: '/images/services/hero.jpg',
     serviceTitle: 'Startup Advisory & Incorporation',
     serviceDescription1:
       "We provide comprehensive legal support for startups, from the initial idea to full-scale operation. Our services include expert **company registration**, strategic business **structuring**, and the drafting of essential **founders' agreements**. We ensure your new venture has a solid legal foundation, protecting your vision and your assets from day one.",
@@ -66,7 +66,7 @@ export default function Home() {
       { icon: 'icon-icon-11', title: 'Comprehensive compliance support' },
       { icon: 'icon-icon-12', title: 'Risk-free founders agreements' },
     ],
-    videoThumbnail: '/assets/img/service/service-details-img2.jpg',
+    videoThumbnail: '/images/services/herodown.jpg',
     videoId: 'dQw4w9WgXcQ',
     justiceTitle: 'Building Your Future, Legally Secure',
     justiceText1:
@@ -77,8 +77,8 @@ export default function Home() {
       'Empowering Entrepreneurs with Legal Clarity',
     ],
     contentImgs3: [
-      '/assets/img/service/service-details-img3.jpg',
-      '/assets/img/service/service-details-img4.jpg',
+      '/images/services/services-1.jpg',
+      '/images/services/services-2.jpg',
     ],
     faqTitle: 'Frequently Asked Questions',
     faqIntro:

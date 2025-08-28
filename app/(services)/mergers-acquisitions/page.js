@@ -54,7 +54,7 @@ export default function Home() {
       { text: 'M&A Due Diligence Checklist', link: '/m&a-checklist' },
       { text: 'Mergers & Acquisitions Guide', link: '/m&a-guide' },
     ],
-    mainImage: '/assets/img/service/services-v2-img6.jpg',
+    mainImage: '/images/services/hero.jpg',
     serviceTitle: 'Mergers & Acquisitions (M&A)',
     serviceDescription1:
       'Our firm provides expert legal counsel on all aspects of Mergers & Acquisitions. We specialize in meticulous **due diligence**, ensuring all legal and financial risks are identified before a deal is finalized. We also assist with **corporate restructuring**, forming **joint ventures**, and drafting and negotiating complex **share purchase agreements** to ensure your transaction is seamless and legally sound.',
@@ -69,7 +69,7 @@ export default function Home() {
       { icon: 'icon-icon-11', title: 'Seamless regulatory approvals' },
       { icon: 'icon-icon-12', title: 'Risk-free transaction support' },
     ],
-    videoThumbnail: '/assets/img/service/service-details-img2.jpg',
+    videoThumbnail: '/images/services/herodown.jpg',
     videoId: 'dQw4w9WgXcQ',
     justiceTitle: 'Strategic Growth, Legally Secure',
     justiceText1:
@@ -80,8 +80,8 @@ export default function Home() {
       'Maximizing Value, Minimizing Risk',
     ],
     contentImgs3: [
-      '/assets/img/service/service-details-img3.jpg',
-      '/assets/img/service/service-details-img4.jpg',
+       '/images/services/services-1.jpg',
+      '/images/services/services-2.jpg',
     ],
     faqTitle: 'Frequently Asked Questions',
     faqIntro:

@@ -54,7 +54,7 @@ export default function Home() {
       { text: 'Dispute Resolution Guide', link: '/dispute-guide' },
       { text: 'Litigation Process Overview', link: '/litigation-overview' },
     ],
-    mainImage: '/assets/img/service/services-v2-img6.jpg',
+    mainImage: '/images/services/hero.jpg',
     serviceTitle: 'Dispute Resolution & Litigation',
     serviceDescription1:
       'Our firm offers robust services in dispute resolution and litigation, covering everything from arbitration and mediation to full-scale courtroom representation. We specialize in complex contract enforcement, debt recovery, and navigating insolvency proceedings, ensuring your legal position is strong and your interests are defended vigorously at every stage of the process.',
@@ -69,7 +69,7 @@ export default function Home() {
       { icon: 'icon-icon-11', title: 'Expert litigation support' },
       { icon: 'icon-icon-12', title: 'Strong contract enforcement' },
     ],
-    videoThumbnail: '/assets/img/service/service-details-img2.jpg',
+    videoThumbnail: '/images/services/herodown.jpg',
     videoId: 'dQw4w9WgXcQ',
     justiceTitle: 'Resolving Conflicts, Upholding Rights',
     justiceText1:
@@ -80,8 +80,8 @@ export default function Home() {
       'Securing Favorable Outcomes',
     ],
     contentImgs3: [
-      '/assets/img/service/service-details-img3.jpg',
-      '/assets/img/service/service-details-img4.jpg',
+       '/images/services/services-1.jpg',
+      '/images/services/services-2.jpg',
     ],
     faqTitle: 'Frequently Asked Questions',
     faqIntro:

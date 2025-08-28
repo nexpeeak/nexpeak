@@ -57,7 +57,7 @@ export default function Home() {
         link: '/privacy-whitepaper',
       },
     ],
-    mainImage: '/assets/img/service/services-v2-img6.jpg',
+    mainImage: '/images/services/hero.jpg',
     serviceTitle: 'Data Protection & Technology Law',
     serviceDescription1:
       'Navigating the digital landscape requires a solid legal foundation. Our expertise in data protection and technology law covers GDPR, cybersecurity, and privacy compliance. We help businesses draft robust SaaS contracts and conduct thorough IT audits to protect sensitive data and ensure legal adherence, mitigating risks in an increasingly regulated world.',
@@ -72,7 +72,7 @@ export default function Home() {
       { icon: 'icon-icon-11', title: 'Expert SaaS contract drafting' },
       { icon: 'icon-icon-12', title: 'Strategic fintech advisory' },
     ],
-    videoThumbnail: '/assets/img/service/service-details-img2.jpg',
+    videoThumbnail: '/images/services/herodown.jpg',
     videoId: 'dQw4w9WgXcQ',
     justiceTitle: 'Protecting Your Digital Frontier',
     justiceText1:
@@ -83,8 +83,8 @@ export default function Home() {
       'Legal Expertise for Tech-Driven Businesses',
     ],
     contentImgs3: [
-      '/assets/img/service/service-details-img3.jpg',
-      '/assets/img/service/service-details-img4.jpg',
+      '/images/services/services-1.jpg',
+      '/images/services/services-2.jpg',
     ],
     faqTitle: 'Frequently Asked Questions',
     faqIntro:

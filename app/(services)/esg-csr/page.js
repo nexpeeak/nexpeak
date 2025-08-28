@@ -50,7 +50,7 @@ export default function Home() {
       { text: 'ESG Reporting Framework', link: '/esg-framework' },
       { text: 'CSR Policy Handbook', link: '/csr-handbook' },
     ],
-    mainImage: '/assets/img/service/services-v2-img6.jpg',
+    mainImage: '/images/services/hero.jpg',
     serviceTitle: 'ESG & CSR Compliance Law',
     serviceDescription1:
       'Our firm provides expert legal guidance on ESG (Environmental, Social, and Governance) and CSR (Corporate Social Responsibility) compliance. We assist with CSR planning, developing robust sustainability strategies, and ensuring your business meets all regulatory and reporting requirements. Our goal is to help you build a responsible and ethical corporate identity that creates long-term value.',
@@ -65,7 +65,7 @@ export default function Home() {
       { icon: 'icon-icon-11', title: 'Effective risk mitigation' },
       { icon: 'icon-icon-12', title: 'Enhanced brand reputation' },
     ],
-    videoThumbnail: '/assets/img/service/service-details-img2.jpg',
+    videoThumbnail: '/images/services/herodown.jpg',
     videoId: 'dQw4w9WgXcQ',
     justiceTitle: 'Growth with Responsibility',
     justiceText1:
@@ -76,8 +76,8 @@ export default function Home() {
       'Trusted Guidance in Corporate Responsibility',
     ],
     contentImgs3: [
-      '/assets/img/service/service-details-img3.jpg',
-      '/assets/img/service/service-details-img4.jpg',
+       '/images/services/services-1.jpg',
+      '/images/services/services-2.jpg',
     ],
     faqTitle: 'Frequently Asked Questions',
     faqIntro:

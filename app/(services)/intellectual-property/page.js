@@ -50,7 +50,7 @@ export default function Home() {
       { text: 'IP Protection Guide', link: '/ip-guide' },
       { text: 'Trademark & Copyright FAQ', link: '/ip-faq' },
     ],
-    mainImage: '/assets/img/service/services-v2-img3.jpg',
+    mainImage: '/images/services/hero.jpg',
     serviceTitle: 'Intellectual Property & Brand Protection',
     serviceDescription1:
       'Your intellectual property is your business’s most valuable asset. We provide comprehensive legal services for **trademark, patent, and copyright registration**, ensuring your unique creations are legally secured from the very beginning. We also conduct thorough **IP due diligence** to protect you during mergers, acquisitions, and partnerships, identifying potential risks and opportunities.',
@@ -65,7 +65,7 @@ export default function Home() {
       { icon: 'icon-icon-11', title: 'Proactive brand monitoring' },
       { icon: 'icon-icon-12', title: 'Valuation and licensing support' },
     ],
-    videoThumbnail: '/assets/img/service/service-details-img2.jpg',
+    videoThumbnail: '/images/services/herodown.jpg',
     videoId: 'dQw4w9WgXcQ',
     justiceTitle: 'Innovate, We Protect',
     justiceText1:
@@ -76,8 +76,8 @@ export default function Home() {
       'Securing Your Brand’s Future',
     ],
     contentImgs3: [
-      '/assets/img/service/service-details-img3.jpg',
-      '/assets/img/service/service-details-img4.jpg',
+      '/images/services/services-1.jpg',
+      '/images/services/services-2.jpg',
     ],
     faqTitle: 'Frequently Asked Questions',
     faqIntro:
