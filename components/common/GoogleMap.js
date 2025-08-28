@@ -22,7 +22,7 @@ export default function MultiMarkerMapInner() {
     <MapContainer
       center={[28.6, 77.2]} // Central Delhi
       zoom={11}
-      style={{ height: "550px", width: "100%" }}
+      style={{ height: "500px", width: "100%" }}
     >
       <TileLayer
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
