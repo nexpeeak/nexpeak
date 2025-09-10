@@ -23,8 +23,7 @@ export default function Home() {
     contactButtonText: 'Contact Us',
     downloadTitle: 'Download File',
     downloads: [
-      { text: 'Contract Essentials Guide', link: '/contract-essentials' },
-      { text: 'Negotiation Strategy Handbook', link: '/negotiation-handbook' },
+      { text: 'Contract Essentials Guide', link: '/assets/resource/Contract_Essentials_Guide.pdf'}
     ],
     mainImage: '/images/services/hero.jpg',
     serviceTitle: 'Contract Drafting & Negotiation',

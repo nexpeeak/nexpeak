@@ -117,54 +117,79 @@ const ServiceDetails = ({ serviceDetails }) => {
               </div>
 
               {/* Downloads Card */}
-              <div className="p-4 bg-white border-0 shadow-sm rounded-4">
-                <div className="pb-3 mb-4 d-flex align-items-center border-bottom">
-                  <div className="service-icon me-3">
-                    <svg
-                      width="20"
-                      height="20"
-                      fill="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
-                    </svg>
-                  </div>
-                  <h3 className="mb-0 h5 fw-bold text-thm-black">
-                    {serviceDetails.downloadTitle}
-                  </h3>
-                </div>
+<div className="p-4 bg-white border-0 shadow-sm rounded-4">
+  <div className="pb-3 mb-4 d-flex align-items-center border-bottom">
+    <div className="service-icon me-3">
+      <svg
+        width="20"
+        height="20"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
+      </svg>
+    </div>
+    <h3 className="mb-0 h5 fw-bold text-thm-black">
+      {serviceDetails.downloadTitle}
+    </h3>
+  </div>
 
-                <div className="gap-3 d-flex flex-column">
-                  {serviceDetails.downloads.map((download, index) => (
-                    <Link href={download.link} key={index} legacyBehavior>
-                      <a className="gap-3 p-3 download-item text-decoration-none d-flex align-items-center rounded-3 bg-light">
-                        <div className="download-icon">
-                          <svg
-                            width="20"
-                            height="20"
-                            fill="currentColor"
-                            viewBox="0 0 24 24"
-                          >
-                            <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
-                          </svg>
-                        </div>
-                        <span className="flex-fill fw-medium text-dark">
-                          {download.text}
-                        </span>
-                        <svg
-                          className="download-arrow"
-                          width="16"
-                          height="16"
-                          fill="currentColor"
-                          viewBox="0 0 24 24"
-                        >
-                          <path d="M5,20H19V18H5M19,9H15V3H9V9H5L12,16L19,9Z" />
-                        </svg>
-                      </a>
-                    </Link>
-                  ))}
-                </div>
-              </div>
+  <div className="gap-3 d-flex flex-column">
+    {serviceDetails.downloads.map((download, index) => (
+      <div key={index} className="gap-3 p-3 download-item text-decoration-none d-flex flex-column flex-sm-row align-items-sm-center rounded-3 bg-light">
+        <div className="download-icon me-sm-3 mb-2 mb-sm-0">
+          <svg
+            width="20"
+            height="20"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" />
+          </svg>
+        </div>
+        <span className="flex-fill fw-medium text-dark text-center text-sm-start">
+          {download.text}
+        </span>
+        <div className="d-flex gap-2 justify-content-center justify-content-sm-end">
+          {/* Preview Button */}
+          <Link href={download.link} legacyBehavior>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-sm btn-outline-primary fw-semibold rounded-pill"
+              title="Preview" // Added tooltip for better UX
+            >
+              <svg
+                width="16"
+                height="16"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path d="M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C17,19.5 21.27,16.39 23,12C21.27,7.61 17,4.5 12,4.5Z" />
+              </svg>
+            </a>
+          </Link>
+          {/* Download Button */}
+          <a
+            href={download.link}
+            download
+            className="btn btn-sm btn-primary fw-semibold rounded-pill"
+            title="Download"
+          >
+            <svg
+              width="16"
+              height="16"
+              fill="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path d="M5,20H19V18H5M19,9H15V3H9V9H5L12,16L19,9Z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    ))}
+  </div>
+</div>
             </div>
           </div>
 

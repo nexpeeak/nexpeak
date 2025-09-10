@@ -1,6 +1,7 @@
 import React from 'react';
 import Layout from '@/components/layout/Layout';
 import { Check } from 'lucide-react';
+import Link from 'next/link';
 
 Home.defaultProps = {
   pricingPackages: [
@@ -115,7 +116,7 @@ export default function Home({ pricingPackages }) {
                     </div>
                     <div className="mt-auto text-center table-footer">
                       <div className="btn-box">
-                        <a className="thm-btn" href="#">
+                        <Link className="thm-btn" href="/contact">
                           {pkg.buttonText}
                           <span className="thm-btn__icon">
                             <i className="icon-icon-8"></i>
@@ -126,7 +127,7 @@ export default function Home({ pricingPackages }) {
                             <span className="thm-btn__hover thm-btn__hover--3"></span>
                             <span className="thm-btn__hover thm-btn__hover--4"></span>
                           </span>
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>

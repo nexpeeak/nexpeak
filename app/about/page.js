@@ -5,6 +5,7 @@ import TeamOne from '@/components/common/TeamOne';
 import TestimonialsTwo from '@/components/slider/TestimonialsTwo';
 import CountUp from 'react-countup';
 import Layout from '@/components/layout/Layout';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -130,10 +131,8 @@ export default function Home() {
     </li>
   </ul>
 </div>
-
-
                     <div className="about-three__content-btn">
-                      <a className="thm-btn" href="#">
+                      <Link className="thm-btn" href="/contact">
                         Get in touch
                         <span className="thm-btn__icon">
                           <i className="icon-icon-8"></i>
@@ -144,7 +143,7 @@ export default function Home() {
                           <span className="thm-btn__hover thm-btn__hover--3"></span>
                           <span className="thm-btn__hover thm-btn__hover--4"></span>
                         </span>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>

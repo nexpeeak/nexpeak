@@ -48,8 +48,7 @@ export default function Home() {
     contactButtonText: 'Contact Us',
     downloadTitle: 'Download File',
     downloads: [
-      { text: 'Startup Legal Checklist', link: '/startup-checklist' },
-      { text: "Founder's Agreement Guide", link: '/founders-guide' },
+      { text: 'Startup Legal Checklist',link: '/assets/resource/Startup-Checklist.pdf'  },
     ],
     mainImage: '/images/services/hero.jpg',
     serviceTitle: 'Startup Advisory & Incorporation',

@@ -6591,3 +6591,32 @@ Faq Page
 
 /* Team */
 
+.download-icon {
+  width: 40px;
+  height: 40px;
+  background-color: var(--thm-primary);
+  color: white;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.download-item:hover {
+  background-color: #e9ecef !important;
+  color: var(--thm-primary) !important;
+  border-color: var(--thm-primary);
+  transform: translateX(4px);
+  text-decoration: none;
+}
+
+.btn-outline-primary {
+  color: var(--thm-primary);
+  border-color: var(--thm-primary);
+}
+
+.btn-primary {
+  background-color: var(--thm-primary);
+  border-color: var(--thm-primary);
+}

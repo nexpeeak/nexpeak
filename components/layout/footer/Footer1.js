@@ -56,19 +56,19 @@ const Footer = () => {
               <h4 className="footer-heading">Our Services</h4>
               <ul className="list-unstyled">
                 <li>
-                  <Link href="/services/startup">Startup & Incorporation</Link>
+                  <Link href="/startup-advisory">Startup & Incorporation</Link>
                 </li>
                 <li>
-                  <Link href="/services/contract">Contract Drafting</Link>
+                  <Link href="/contract-drafting">Contract Drafting</Link>
                 </li>
                 <li>
-                  <Link href="/services/ipr">IPR & Brand Protection</Link>
+                  <Link href="/intellectual-property">IPR & Brand Protection</Link>
                 </li>
                 <li>
-                  <Link href="/services/compliance">Compliance Management</Link>
+                  <Link href="/compliance-management">Compliance Management</Link>
                 </li>
                 <li>
-                  <Link href="/services/tax">Tax & Financial Compliance</Link>
+                  <Link href="/taxation-compliance">Tax & Financial Compliance</Link>
                 </li>
               </ul>
             </div>

@@ -47,8 +47,7 @@ export default function Home() {
     contactButtonText: 'Contact Us',
     downloadTitle: 'Download File',
     downloads: [
-      { text: 'IP Protection Guide', link: '/ip-guide' },
-      { text: 'Trademark & Copyright FAQ', link: '/ip-faq' },
+      { text: 'IP Protection Guide',link: '/assets/resource/Intellectual_Property_(IP)_Guide.pdf' },
     ],
     mainImage: '/images/services/hero.jpg',
     serviceTitle: 'Intellectual Property & Brand Protection',
