@@ -202,3 +202,10 @@
     margin-bottom: 10px;
   }
 }
+
+
+.whatsapp-float {
+  bottom: calc(30px + 70px) !important; /* above scroll-top */
+  right: 50px !important;
+  z-index: 100 !important;
+}

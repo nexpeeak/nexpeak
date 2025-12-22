@@ -14,6 +14,7 @@ import Header3 from "./header/Header3"
 import Header4 from "./header/Header4"
 import Header5 from "./header/Header5"
 import Header6 from "./header/Header6"
+import { FloatingWhatsApp } from 'react-floating-whatsapp'
 
 export default function Layout({ headerStyle, footerStyle, headTitle, breadcrumbTitle, children, wrapperCls }) {
     const [scroll, setScroll] = useState(0)
@@ -73,6 +74,17 @@ export default function Layout({ headerStyle, footerStyle, headTitle, breadcrumb
                 {footerStyle == 2 ? < Footer2 /> : null}
                 {footerStyle == 3 ? < Footer3 /> : null}
             </div>
+<FloatingWhatsApp
+  phoneNumber="919027667840"
+  accountName="Nexpeak Legal"
+  chatMessage="Hello! How can we help you with your legal needs?"
+  statusMessage="Typically replies instantly"
+  placeholder="Type a message..."
+   avatar="/images/whatsapp.png"
+  notification
+  className="whatsapp-float"
+/>
+
             <BackToTop scroll={scroll} />
         </>
     )
