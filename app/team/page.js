@@ -6,7 +6,7 @@ import CtaOne from '@/components/common/CtaOne';
 const TeamSection = () => {
   const teamMembers = [
     {
-      name: 'Shivangi Nigam',
+      name: 'Shivangi',
       position: 'Founder & Managing Partner',
       image: '/images/team/shivangi.jpeg',
       quote:
