@@ -14,7 +14,7 @@ export const metadata = {
     url: 'https://www.nexpeaklegal.com/about',
     images: [
       {
-        url: '/images/about/about.jpg',
+        url: '/images/about/growth.jpg',
         width: 1200,
         height: 630,
         alt: 'About Nexpeak Legal',

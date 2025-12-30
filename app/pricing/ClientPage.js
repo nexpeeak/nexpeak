@@ -13,14 +13,14 @@ const pricingPackages = [
     iconClass: 'icon-icon-12',
     buttonText: 'Get Started',
     features: [
-      'Company Profile/Pitch Deck',
-      'Complete Startup Registration (DSC/DIN, MOA/AOA, GST, PAN/TAN)',
-      'Basic Compliance (MCA Filing, GST Return, TDS Return)',
-      'DPIIT Registration and Benefits',
-      'Trademark Filing (1 Class) with Documents',
+      'Company Profile / Pitch Deck',
+      'Startup Registration (DSC, DIN, MOA/AOA, GST, PAN/TAN)',
+      'Basic Compliance (MCA, GST, TDS)',
+      'DPIIT Registration',
+      'Trademark Filing (1 Class)',
       '3 Standard Policies',
       '3 Basic Agreements',
-      'Consultancy & Customer Support',
+      'Consultancy & Support',
     ],
   },
   {
@@ -31,13 +31,13 @@ const pricingPackages = [
     buttonText: 'Get Started',
     isPopular: true,
     features: [
-      'All in Foundation Plan',
-      'Complete Startup Registration with MSME',
-      'Extended Compliance with ITR Filing & DIN E-KYC',
-      'Complete Trademark Process with Monitoring',
+      'Everything in Foundation',
+      'MSME Registration',
+      'ITR Filing & DIN E-KYC',
+      'Trademark Monitoring',
       '5 Custom Policies',
       '5 Professional Agreements',
-      'Consultancy & Dedicated Lawyer',
+      'Dedicated Lawyer Support',
     ],
   },
   {
@@ -47,54 +47,41 @@ const pricingPackages = [
     iconClass: 'icon-icon-43',
     buttonText: 'Get Started',
     features: [
-      'All in Professional Plan',
-      'Complete Startup Registration Package',
-      'Full Compliance (MCA, GST, TDS, ESIC, EPFO, ITR, Payroll)',
-      'Premium Trademark Management with Infringement Monitoring',
-      '10 Comprehensive Policies (Including ESOP, CSR)',
-      '10 Advanced Agreements and Legal Documents',
-      'In-House Legal Team & Dedicated Lawyer',
+      'Everything in Professional',
+      'Complete Startup Package',
+      'Full Compliance (MCA, GST, TDS, ESIC, EPFO, ITR)',
+      'Premium Trademark Protection',
+      '10 Advanced Policies (ESOP, CSR)',
+      '10 Legal Agreements',
+      'In-House Legal Team',
     ],
   },
 ];
 
 export default function ClientPage() {
   return (
-    <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="Pricing plan">
+    <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="Pricing Plans">
       <section className="pricing-one">
         <div className="container">
           <div className="text-center sec-title">
-            <div className="sub-title center">
-              <div className="icon">
-                <img src="/assets/img/icon/sec-title-img1.png" alt="Icon" />
-              </div>
-              <div className="text">
-                <p>our plans</p>
-              </div>
-            </div>
-            <h2>ANNUAL SUBSCRIPTION PLAN</h2>
-            <h4 style={{ color: 'var(--thm-gray)', marginTop: '10px' }}>
-              For Startups, Student and Women Entrepreneurs
-            </h4>
+            <h1>Annual Legal Subscription Plans</h1>
+            <p>Designed for Startups, Students & Women Entrepreneurs</p>
           </div>
 
-          <div className="row d-flex align-items-stretch">
+          <div className="row align-items-stretch">
             {pricingPackages.map((pkg, index) => (
-              <div key={index} className="col-xl-4 col-lg-4 d-flex">
+              <div key={index} className="col-lg-4 d-flex">
                 <div
-                  className={`pricing-one__single d-flex flex-column w-100 ${
+                  className={`pricing-one__single w-100 d-flex flex-column ${
                     pkg.isPopular ? 'popular-plan' : ''
                   }`}
-                  style={{ position: 'relative' }}
                 >
                   {pkg.isPopular && (
-                    <div className="popular-ribbon">
-                      <span>Popular</span>
-                    </div>
+                    <div className="popular-ribbon">Popular</div>
                   )}
 
                   <div className="table-header text-center">
-                    <div className={`icon ${pkg.iconClass}`}></div>
+                    <div className={`icon ${pkg.iconClass}`} />
                     <h3>{pkg.title}</h3>
                     <h2>
                       {pkg.price}
@@ -103,11 +90,10 @@ export default function ClientPage() {
                   </div>
 
                   <div className="table-content flex-grow-1">
-                    <ul style={{ listStyle: 'none', padding: 0 }}>
+                    <ul>
                       {pkg.features.map((feature, i) => (
-                        <li key={i} style={{ display: 'flex', alignItems: 'flex-start', gap: '10px', marginBottom: '10px' }}>
-                          <Check size={16} style={{ color: 'var(--thm-primary)', marginTop: '5px', flexShrink: 0 }} />
-                          <p style={{ margin: 0, fontSize: '15px' }}>{feature}</p>
+                        <li key={i}>
+                          <Check size={16} /> {feature}
                         </li>
                       ))}
                     </ul>
@@ -116,9 +102,6 @@ export default function ClientPage() {
                   <div className="table-footer text-center mt-auto">
                     <Link href="/contact" className="thm-btn">
                       {pkg.buttonText}
-                      <span className="thm-btn__icon">
-                        <i className="icon-icon-8"></i>
-                      </span>
                     </Link>
                   </div>
                 </div>
@@ -132,18 +115,25 @@ export default function ClientPage() {
         .popular-plan {
           border: 2px solid var(--thm-primary);
           transform: scale(1.05);
-          z-index: 1;
         }
         .popular-ribbon {
           position: absolute;
-          top: 0;
-          right: 0;
+          top: 10px;
+          right: 10px;
           background: var(--thm-primary);
-          color: white;
-          padding: 5px 15px;
+          color: #fff;
+          padding: 4px 12px;
           font-size: 12px;
-          font-weight: bold;
-          border-bottom-left-radius: 10px;
+          border-radius: 6px;
+        }
+        ul {
+          list-style: none;
+          padding: 0;
+        }
+        li {
+          display: flex;
+          gap: 10px;
+          margin-bottom: 10px;
         }
       `}</style>
     </Layout>

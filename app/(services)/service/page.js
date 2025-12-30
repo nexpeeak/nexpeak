@@ -1,57 +1,75 @@
 import ClientPage from './ClientPage';
 
 export const metadata = {
-  title: 'Legal Services for Startups & Corporations in India | Nexpeak',
+  title: 'Our Expert Attorneys | Nexpeak Legal Services Team',
   description:
-    'Explore our comprehensive legal services including Startup Advisory, IP Protection, M&A, Taxation, and Technology Law compliance for modern businesses.',
+    'Meet the expert legal minds at Nexpeak. Our team consists of specialized corporate lawyers, litigation experts, patent agents, and tax consultants dedicated to your success.',
+
   alternates: {
-    canonical: 'https://www.nexpeaklegal.com/service',
+    canonical: 'https://www.nexpeaklegal.com/team',
   },
+
   openGraph: {
-    title: 'Expert Legal & Compliance Services | Nexpeak Legal',
+    title: 'Meet Our Legal Team | Nexpeak Legal',
     description:
-      'From incorporation to emerging tech compliance, Nexpeak provides end-to-end legal solutions for global businesses.',
-    url: 'https://www.nexpeaklegal.com/service',
+      'A dedicated team of attorneys specializing in Corporate Law, IPR Strategy, and Commercial Litigation.',
+    url: 'https://www.nexpeaklegal.com/team',
+    siteName: 'Nexpeak Legal Services',
     images: [
       {
-        url: '/images/home/services.jpg',
+        url: 'https://www.nexpeaklegal.com/images/team/shivangi.jpeg',
         width: 1200,
         height: 630,
-        alt: 'Nexpeak Legal Services Overview',
+        alt: 'Nexpeak Legal Services Team',
       },
     ],
-    type: 'website',
+    type: 'profile',
+  },
+
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Meet Our Legal Team | Nexpeak Legal',
+    description:
+      'Expert attorneys and legal consultants at Nexpeak Legal Services.',
+    images: ['https://www.nexpeaklegal.com/images/team/shivangi.jpeg'],
   },
 };
 
 export default function Page() {
   return (
     <>
-      {/* Collection Page Schema */}
+      {/* Organization + Team Schema */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             "@context": "https://schema.org",
-            "@type": "ItemList",
+            "@type": "Organization",
             "name": "Nexpeak Legal Services",
-            "description": "A full suite of legal and compliance services for startups and established corporations.",
-            "url": "https://www.nexpeaklegal.com/service",
-            "itemListElement": [
+            "url": "https://www.nexpeaklegal.com",
+            "logo": "https://www.nexpeaklegal.com/images/logo.png",
+            "employee": [
               {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Startup Advisory & Incorporation"
+                "@type": "Person",
+                "name": "Shivangi",
+                "jobTitle": "Founder & Managing Partner",
+                "image": "https://www.nexpeaklegal.com/images/team/shivangi.jpeg",
+                "worksFor": {
+                  "@type": "Organization",
+                  "name": "Nexpeak Legal Services"
+                }
               },
               {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "Intellectual Property & Brand Protection"
+                "@type": "Person",
+                "name": "Adv. Tushar Mistra",
+                "jobTitle": "Corporate & Commercial Litigation",
+                "image": "https://www.nexpeaklegal.com/images/team/tushar-mistra.jpg"
               },
               {
-                "@type": "ListItem",
-                "position": 3,
-                "name": "Data Protection & Technology Law"
+                "@type": "Person",
+                "name": "Anu Gupta",
+                "jobTitle": "Patent Agent & IPR Strategist",
+                "image": "https://www.nexpeaklegal.com/images/team/anu-gupta.jpeg"
               }
             ]
           })
