@@ -35,7 +35,7 @@ export const metadata = {
     siteName: 'Nexpeak Legal Services',
     images: [
       {
-        url: '/images/og-default.jpg',
+        url: '/images/logo.png',
         width: 1200,
         height: 630,
         alt: 'Nexpeak Legal Services - Your Trusted Legal Partners'
@@ -49,7 +49,7 @@ export const metadata = {
     card: 'summary_large_image',
     title: 'Nexpeak | Expert Legal & Compliance Services',
     description: 'Expert legal firm for AI compliance, data protection, IP law, and comprehensive business legal services.',
-    images: ['/images/og-default.jpg']
+    images: ['/images/logo.png']
   },
 
   icons: {
