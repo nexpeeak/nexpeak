@@ -1,21 +1,25 @@
 {
-  "name": "MyWebSite",
-  "short_name": "MySite",
+  "name": "Nexpeak Legal Services",
+  "short_name": "Nexpeak",
+  "description": "Expert legal & compliance services including AI compliance, data protection, contracts, IP law, and business advisory in India.",
+  "start_url": "/?source=pwa",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#008bbf",
+  "theme_color": "#008bbf",
   "icons": [
     {
       "src": "/web-app-manifest-192x192.png",
       "sizes": "192x192",
       "type": "image/png",
-      "purpose": "maskable"
+      "purpose": "maskable any"
     },
     {
       "src": "/web-app-manifest-512x512.png",
       "sizes": "512x512",
       "type": "image/png",
-      "purpose": "maskable"
+      "purpose": "maskable any"
     }
-  ],
-  "theme_color": "#008bbf",
-  "background_color": "008bbf",
-  "display": "standalone"
+  ]
 }

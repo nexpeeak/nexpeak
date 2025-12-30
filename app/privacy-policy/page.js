@@ -1,10 +1,42 @@
-'use client';
-import React from 'react';
-import PolicyPage from '@/components/common/PolicyPage';
-import { dataPrivacyData } from '@/data/dataPrivacyData';
+import ClientPage from './ClientPage';
 
-const DataPrivacy = () => {
-  return <PolicyPage policyData={dataPrivacyData} />;
+export const metadata = {
+  title: 'Privacy Policy | Nexpeak Legal Partners',
+  description:
+    'Read the Nexpeak Legal Partners Data Privacy Policy. We are committed to safeguarding user privacy and personal data in compliance with the IT Act 2000.',
+  alternates: {
+    canonical: 'https://www.nexpeaklegal.com/privacy-policy',
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
-export default DataPrivacy;
+export default function Page() {
+  return (
+    <>
+      {/* Organization and Privacy Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "Privacy Policy",
+            "description": "Nexpeak Legal Partners' data privacy practices and user rights under the IT Act 2000.",
+            "publisher": {
+              "@type": "Organization",
+              "name": "Nexpeak Legal Services",
+              "url": "https://www.nexpeaklegal.com"
+            },
+            "datePublished": "2025-04-12",
+            "dateModified": "2025-04-12"
+          })
+        }}
+      />
+
+      <ClientPage />
+    </>
+  );
+}

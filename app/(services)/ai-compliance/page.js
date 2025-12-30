@@ -1,64 +1,57 @@
-'use client';
+import ClientPage from './ClientPage';
 
-import ServiceDetails from '@/components/common/ServiceDetails';
-import Layout from '@/components/layout/Layout';
+export const metadata = {
+  title: 'AI Compliance & Emerging Technology Legal Services in India',
+  description:
+    'Expert legal advisory for AI, blockchain, and emerging technologies. Ensure compliance with AI regulations, data protection laws, and ethical AI frameworks.',
+  alternates: {
+    canonical: 'https://www.nexpeaklegal.com/ai-compliance',
+  },
+  openGraph: {
+    title: 'AI Compliance & Emerging Technology Legal Services | Nexpeak',
+    description:
+      'Legal compliance for AI, blockchain, and emerging technologies. Trusted advisors for ethical, secure, and lawful innovation.',
+    url: 'https://www.nexpeaklegal.com/ai-compliance',
+    images: [
+      {
+        url: '/images/services/ai-compliance.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'AI Compliance Legal Services',
+      },
+    ],
+    type: 'website',
+  },
+};
 
-export default function Home() {
-  const serviceDetails = {
-    serviceListTitle: 'Service List',
-    serviceList: [
-      { name: 'Startup Advisory & Incorporation', link: '/startup-advisory', isActive: false },
-      { name: 'Contract Drafting & Negotiation', link: '/contract-drafting', isActive: false },
-      { name: 'Intellectual Property & Brand Protection', link: '/intellectual-property', isActive: false },
-      { name: 'Secretarial Compliance Management', link: '/compliance-management', isActive: false },
-      { name: 'Taxation & Financial Compliance', link: '/taxation-compliance', isActive: false },
-      { name: 'Employment & Labour Law Advisory', link: '/labour-law', isActive: false },
-      { name: 'AI & Emerging Technology Compliance', link: '/ai-compliance', isActive: true },
-    ],
-    contactPattern: 'assets/img/pattern/sidebar-contact-pattern.png',
-    contactIcon: '/assets/img/icon/about-v2-icon1.png',
-    contactTitle: 'Get in Touch',
-    contactSubtitle: 'Legal Justice for You',
-    contactLink: '/contact',
-    contactButtonText: 'Contact Us',
-    downloadTitle: 'Download File',
-    downloads: [
-      { text: 'AI Compliance Checklist', link: '/ai-compliance-checklist' },
-      { text: 'Technology Law Whitepaper', link: '/tech-law-whitepaper' },
-    ],
-    mainImage: '/images/services/hero.jpg',
-    serviceTitle: 'AI & Emerging Technology Compliance',
-    serviceDescription1: 'Guiding you through the complexities of AI, blockchain, and other emerging technologies. We assist in establishing robust governance frameworks and ensuring adherence to rapidly evolving legal landscapes, protecting your innovation and reputation. Our expertise covers data ethics, bias mitigation, and intellectual property rights related to AI outputs.',
-    serviceDescription2: 'From smart contract audits to regulatory filings for AI-driven products, our team provides comprehensive legal support. We help you navigate the intricate web of global technology regulations, including GDPR, CCPA, and new AI-specific laws. We ensure your technology is built on a foundation of legal security and ethical integrity.',
-    benefitTitle: 'Benefits of our services',
-    benefitDescription: 'Our deep understanding of technology and law enables us to offer proactive, forward-thinking legal solutions. We help you identify potential risks before they become issues, ensuring your AI initiatives are both innovative and compliant. We aim to secure your position as a responsible and trustworthy leader in your industry.',
-    benefits: [
-      { icon: 'icon-icon-9', title: 'Proactive regulatory guidance' },
-      { icon: 'icon-icon-10', title: 'Ethical AI framework development' },
-      { icon: 'icon-icon-11', title: 'Protection of intellectual property' },
-      { icon: 'icon-icon-12', title: 'Global compliance strategies' },
-    ],
-    videoThumbnail: '/images/services/herodown.jpg',
-    videoId: 'dQw4w9WgXcQ',
-    justiceTitle: 'Innovate with Confidence',
-    justiceText1: 'We empower you to leverage the full potential of AI by ensuring your technology aligns with legal and ethical standards. Our guidance helps you innovate without fear of non-compliance, allowing you to focus on developing groundbreaking solutions for a better future. We bridge the gap between technological advancement and legal responsibility.',
-    justiceList: ['Securing Your AI Innovation', 'Navigating the Digital Frontier Legally', 'Expertise in Future-Proofing Your Tech'],
-    contentImgs3: [
-      '/images/services/services-1.jpg',
-      '/images/services/services-2.jpg',
-    ],
-    faqTitle: 'Frequently Asked Questions',
-    faqIntro: 'Day above abundantly to abundantly beginning multiply air set can not first sixth void the upon after also created signs greater. Every said shed beast every herb signs fowl may yielding face likeness morning.',
-    faqs: [
-      { question: 'What is the most critical compliance risk for AI?', answer: 'The most critical compliance risk for AI involves data privacy, algorithmic bias, and transparency requirements. Regulations like GDPR and emerging AI Acts globally place strict obligations on how data is used and how AI decisions are made.' },
-      { question: 'How do you handle IP rights for AI-generated content?', answer: 'We advise on strategies for protecting IP generated by AI, including ownership and licensing. The legal framework is still evolving, so we help clients navigate gray areas and draft agreements that secure their rights and minimize disputes.' },
-      { question: 'What legal support do you offer for blockchain projects?', answer: 'For blockchain projects, we provide legal counsel on smart contract validity, token issuance compliance (e.g., securities law), and regulatory sandboxes. We ensure your distributed ledger technology adheres to financial and data regulations.' },
-    ],
-  };
-
+export default function Page() {
   return (
-    <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="AI & Emerging Technology Compliance">
-      <ServiceDetails serviceDetails={serviceDetails} />
-    </Layout>
+    <>
+      {/* Service Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": "AI & Emerging Technology Compliance",
+            "description":
+              "Legal advisory for AI compliance, ethical AI governance, blockchain law, and emerging technology regulations.",
+            "provider": {
+              "@type": "Organization",
+              "name": "Nexpeak Legal Services",
+              "url": "https://www.nexpeaklegal.com"
+            },
+            "areaServed": {
+              "@type": "Country",
+              "name": "India"
+            },
+            "serviceType": "AI & Technology Law"
+          })
+        }}
+      />
+
+      <ClientPage />
+    </>
   );
 }

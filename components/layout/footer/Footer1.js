@@ -31,9 +31,9 @@ const Footer = () => {
                 />
               </Link>
               <p className="mt-3 ">
-                Nexpeak is a client-focused legal firm offering expert counsel
-                and dedicated advocacy. We provide clear, strategic guidance
-                tailored to your unique needs.
+               Nexpeak is a client-focused legal firm serving businesses across
+Delhi, Gurugram, and India with expert legal and compliance solutions.
+
               </p>
               <div className="mt-4 social-links">
                 <Link href="https://www.facebook.com/nexpeaklawfirm" aria-label="Facebook">
