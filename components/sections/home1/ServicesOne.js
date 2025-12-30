@@ -1,50 +1,46 @@
-'use client'; // Ensures the component runs on the client side
-
 import Link from 'next/link';
-import { useState } from 'react';
+
+const servicesContent = {
+  backgroundImage: '/images/home/services.jpg',
+  sectionTitleIcon: '/assets/img/icon/sec-title-img1.png',
+  sectionTitleText: 'popular services',
+  sectionMainTitle: 'Everyone deserves the best legal assistance',
+  services: [
+    {
+      id: 1,
+      title: 'Startup Advisory & Incorporation',
+      description: 'Business setup, compliance, and registration.',
+      link: '/startup-advisory',
+    },
+    {
+      id: 2,
+      title: 'Contract Drafting & Negotiation',
+      description: 'Strong agreements for smooth and secure business deals.',
+      link: '/contract-drafting',
+    },
+    {
+      id: 3,
+      title: 'IPR & Brand Protection',
+      description: 'Safeguard trademarks, copyrights, and patents.',
+      link: '/intellectual-property',
+    },
+    {
+      id: 4,
+      title: 'Regulatory & Compliance',
+      description: 'Stay compliant with ever-changing laws and regulations.',
+      link: '/compliance-management',
+    },
+    {
+      id: 5,
+      title: 'Dispute Resolution & Litigation',
+      description:
+        'Expert legal support to resolve disputes and represent you effectively.',
+      link: '/dispute-resolution',
+    },
+  ],
+};
 
 export default function ServicesOne() {
-  // State for dynamic data (e.g., dynamic images, text, links)
-  const [servicesContent, setServicesContent] = useState({
-    backgroundImage: '/images/home/services.jpg',
-    sectionTitleIcon: '/assets/img/icon/sec-title-img1.png',
-    sectionTitleText: 'popular services',
-    sectionMainTitle: 'Everyone deserves legal best assistance',
-    services: [
-      {
-        id: 1,
-        title: 'Startup Advisory & Incorporation',
-        description: 'Business setup, compliance, and registration.',
-        link: '/startup-advisory',
-      },
-      {
-        id: 2,
-        title: 'Contract Drafting & Negotiation',
-        description: 'Strong agreements for smooth business deals.',
-        link: '/contract-drafting',
-      },
-      {
-        id: 3,
-        title: 'IPR & Brand Protection',
-        description: 'Safeguard trademarks, copyrights, and patents.',
-        link: '/intellectual-property',
-      },
-      {
-        id: 4,
-        title: 'Regulatory & Compliance',
-        description: 'Stay compliant with ever-changing laws.',
-        link: '/compliance-management',
-      },
-      {
-        id: 5,
-        title: 'Dispute Resolution and Litigation',
-        description:
-          'Expert legal support to resolve disputes and represent you effectively.',
-        link: '/dispute-resolution',
-      },
-    ],
-  });
-
   return (
     <>
       {/* Start Services One */}
@@ -55,6 +51,7 @@ export default function ServicesOne() {
           data-wow-duration="1500ms"
           style={{ backgroundImage: `url(${servicesContent.backgroundImage})` }}
         ></div>
+
         <div className="container">
           <div className="services-one__content">
             <div className="sec-title">
@@ -62,7 +59,7 @@ export default function ServicesOne() {
                 <div className="icon">
                   <img
                     src={servicesContent.sectionTitleIcon}
-                    alt="Section Icon"
+                    alt=""
                   />
                 </div>
                 <div className="text">
@@ -81,7 +78,9 @@ export default function ServicesOne() {
                     </div>
                     <div className="text-box">
                       <h2 style={{ fontSize: '28px' }}>
-                        <Link href={service.link}>{service.title}</Link>
+                        <Link href={service.link}>
+                          {service.title}
+                        </Link>
                       </h2>
                       <p>{service.description}</p>
                     </div>
@@ -89,7 +88,7 @@ export default function ServicesOne() {
 
                   <div className="btn-box">
                     <Link href={service.link}>
-                      read More <span className="icon-icon-8"></span>
+                      Read More <span className="icon-icon-8"></span>
                     </Link>
                   </div>
                 </li>

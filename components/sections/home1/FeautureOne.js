@@ -1,55 +1,51 @@
-'use client'; // Add this line at the top to ensure the component runs on the client side
-
 import Link from 'next/link';
-import { useState } from 'react';
+
+const featureContent = {
+  patternImage: '/assets/img/pattern/feauture-v1-pattern.png',
+  sectionTitleIcon: '/assets/img/icon/sec-title-img1.png',
+  sectionTitleText: 'welcome to Nexpeak',
+  sectionMainTitle: 'our best features',
+  features: [
+    {
+      icon: 'icon-icon-9',
+      title: 'Strategic Legal Partnership',
+      content:
+        'We go beyond legal advice by aligning our strategies with your long-term business goals.',
+      shapeImage: '/assets/img/shape/feauture-v1-shape1.png',
+      animation: 'fadeInLeft',
+      delay: '0ms',
+    },
+    {
+      icon: 'icon-icon-11',
+      title: 'Expert Legal Counsel',
+      content:
+        'Highly skilled lawyers with deep expertise across corporate, commercial, and business law.',
+      shapeImage: '/assets/img/shape/feauture-v1-shape1.png',
+      animation: 'fadeInRight',
+      delay: '100ms',
+    },
+    {
+      icon: 'icon-icon-10',
+      title: 'Proven Results & Trusted Defense',
+      content:
+        'A strong track record of protecting clients and delivering favorable legal outcomes.',
+      shapeImage: '/assets/img/shape/feauture-v1-shape1.png',
+      animation: 'fadeInLeft',
+      delay: '200ms',
+    },
+    {
+      icon: 'icon-icon-12',
+      title: 'Legal Subscription',
+      content:
+        'Affordable, ongoing legal support designed to protect your business and capital efficiently.',
+      shapeImage: '/assets/img/shape/feauture-v1-shape1.png',
+      animation: 'fadeInRight',
+      delay: '100ms',
+    },
+  ],
+};
 
 export default function FeautureOne() {
-  // State for dynamic data (e.g., dynamic images, text, links)
-  const [featureContent, setFeatureContent] = useState({
-    patternImage: '/assets/img/pattern/feauture-v1-pattern.png',
-    sectionTitleIcon: '/assets/img/icon/sec-title-img1.png',
-    sectionTitleText: 'welcome to Nexpeak',
-    sectionMainTitle: 'our best features',
-    features: [
-      {
-        icon: 'icon-icon-9',
-        title: 'Strategic Legal Partnership',
-        content:
-          'We go beyond legal advice—aligning our strategies with your long-term goals.',
-        shapeImage: '/assets/img/shape/feauture-v1-shape1.png',
-        animation: 'fadeInLeft',
-        delay: '0ms',
-      },
-      {
-        icon: 'icon-icon-11',
-        title: 'Expert Legal Counsel',
-        content:
-          'Highly skilled lawyers with deep experience across corporate and business law.',
-        shapeImage: '/assets/img/shape/feauture-v1-shape1.png',
-        animation: 'fadeInRight',
-        delay: '100ms',
-      },
-      {
-        icon: 'icon-icon-10',
-        title: 'Proven Results & Trusted Defense',
-        content:
-          'A strong track record of protecting clients and achieving favorable outcomes.',
-        shapeImage: '/assets/img/shape/feauture-v1-shape1.png',
-        animation: 'fadeInLeft',
-        delay: '200ms',
-      },
-      {
-        icon: 'icon-icon-12',
-        title: 'Legal Subscription ',
-        content:
-        "Affordable, ongoing legal support to protect your business and financial capital wisely.",
-        shapeImage: '/assets/img/shape/feauture-v1-shape1.png',
-        animation: 'fadeInRight',
-        delay: '100ms',
-      },
-    ],
-  });
-
   return (
     <>
       {/* Start Feature One */}
@@ -58,6 +54,7 @@ export default function FeautureOne() {
           className="feauture-one__pattern"
           style={{ backgroundImage: `url(${featureContent.patternImage})` }}
         ></div>
+
         <div className="container">
           <div className="text-center sec-title">
             <div className="sub-title center">
@@ -83,6 +80,7 @@ export default function FeautureOne() {
                   <div className="shape1">
                     <img src={feature.shapeImage} alt="" />
                   </div>
+
                   <div className="feauture-one__single-icon">
                     <span className={feature.icon}></span>
                   </div>

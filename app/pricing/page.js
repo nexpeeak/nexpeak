@@ -1,14 +1,13 @@
 import ClientPage from './ClientPage';
+import Script from 'next/script';
 
 export const metadata = {
   title: 'Pricing Plans | Affordable Legal Subscriptions for Startups',
   description:
     'Choose from our Foundation, Professional, or Executive plans. Affordable annual subscription legal services for startups, students, and women entrepreneurs in India.',
-
   alternates: {
     canonical: 'https://www.nexpeaklegal.com/pricing',
   },
-
   openGraph: {
     title: 'Startup Legal Pricing & Subscription Plans | Nexpeak',
     description:
@@ -25,7 +24,6 @@ export const metadata = {
     ],
     type: 'website',
   },
-
   twitter: {
     card: 'summary_large_image',
     title: 'Legal Subscription Pricing | Nexpeak',
@@ -38,57 +36,61 @@ export const metadata = {
 export default function Page() {
   return (
     <>
-      {/* Pricing / Offer Catalog Schema */}
-      <script
+      <Script
+        id="pricing-offer-catalog-schema"
         type="application/ld+json"
+        strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "OfferCatalog",
-            "name": "Nexpeak Legal Subscription Plans",
-            "url": "https://www.nexpeaklegal.com/pricing",
-            "provider": {
-              "@type": "Organization",
-              "name": "Nexpeak Legal Services",
-              "url": "https://www.nexpeaklegal.com",
-              "logo": "https://www.nexpeaklegal.com/images/logo.png"
+            '@context': 'https://schema.org',
+            '@type': 'OfferCatalog',
+            name: 'Nexpeak Legal Subscription Plans',
+            url: 'https://www.nexpeaklegal.com/pricing',
+            provider: {
+              '@type': 'Organization',
+              name: 'Nexpeak Legal Services',
+              url: 'https://www.nexpeaklegal.com',
+              logo: 'https://www.nexpeaklegal.com/images/logo.png',
             },
-            "itemListElement": [
+            itemListElement: [
               {
-                "@type": "Offer",
-                "price": "2999",
-                "priceCurrency": "INR",
-                "url": "https://www.nexpeaklegal.com/pricing",
-                "itemOffered": {
-                  "@type": "Service",
-                  "name": "Foundation Plan",
-                  "description": "Startup registration, basic compliance, trademark filing, and essential legal documentation."
-                }
+                '@type': 'Offer',
+                price: '2999',
+                priceCurrency: 'INR',
+                url: 'https://www.nexpeaklegal.com/pricing',
+                itemOffered: {
+                  '@type': 'Service',
+                  name: 'Foundation Plan',
+                  description:
+                    'Startup registration, basic compliance, trademark filing, and essential legal documentation.',
+                },
               },
               {
-                "@type": "Offer",
-                "price": "3999",
-                "priceCurrency": "INR",
-                "url": "https://www.nexpeaklegal.com/pricing",
-                "itemOffered": {
-                  "@type": "Service",
-                  "name": "Professional Plan",
-                  "description": "Advanced compliance, trademark monitoring, dedicated lawyer, and extended legal services."
-                }
+                '@type': 'Offer',
+                price: '3999',
+                priceCurrency: 'INR',
+                url: 'https://www.nexpeaklegal.com/pricing',
+                itemOffered: {
+                  '@type': 'Service',
+                  name: 'Professional Plan',
+                  description:
+                    'Advanced compliance, trademark monitoring, dedicated lawyer, and extended legal services.',
+                },
               },
               {
-                "@type": "Offer",
-                "price": "4999",
-                "priceCurrency": "INR",
-                "url": "https://www.nexpeaklegal.com/pricing",
-                "itemOffered": {
-                  "@type": "Service",
-                  "name": "Executive Plan",
-                  "description": "Full compliance, in-house legal team support, premium IP protection, and strategic advisory."
-                }
-              }
-            ]
-          })
+                '@type': 'Offer',
+                price: '4999',
+                priceCurrency: 'INR',
+                url: 'https://www.nexpeaklegal.com/pricing',
+                itemOffered: {
+                  '@type': 'Service',
+                  name: 'Executive Plan',
+                  description:
+                    'Full compliance, in-house legal team support, premium IP protection, and strategic advisory.',
+                },
+              },
+            ],
+          }),
         }}
       />
 

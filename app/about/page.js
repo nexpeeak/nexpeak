@@ -1,4 +1,5 @@
 import ClientPage from './ClientPage';
+import Script from 'next/script';
 
 export const metadata = {
   title: 'About Nexpeak | Our History & Legal Expertise',
@@ -14,7 +15,7 @@ export const metadata = {
     url: 'https://www.nexpeaklegal.com/about',
     images: [
       {
-        url: '/images/about/growth.jpg',
+        url: 'https://www.nexpeaklegal.com/images/about/growth.jpg',
         width: 1200,
         height: 630,
         alt: 'About Nexpeak Legal',
@@ -22,26 +23,37 @@ export const metadata = {
     ],
     type: 'website',
   },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'About Nexpeak Legal Services',
+    description:
+      'Trusted legal advisors delivering clarity, compliance, and confidence.',
+    images: [
+      'https://www.nexpeaklegal.com/images/about/growth.jpg',
+    ],
+  },
 };
 
 export default function Page() {
   return (
     <>
-      {/* About Page Schema */}
-      <script
+      <Script
+        id="about-page-schema"
         type="application/ld+json"
+        strategy="afterInteractive"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "AboutPage",
-            "name": "About Nexpeak Legal",
-            "description": "Nexpeak is a legal firm providing expert guidance in corporate, compliance, and technology law.",
-            "publisher": {
-              "@type": "Organization",
-              "name": "Nexpeak Legal Services",
-              "url": "https://www.nexpeaklegal.com"
-            }
-          })
+            '@context': 'https://schema.org',
+            '@type': 'AboutPage',
+            name: 'About Nexpeak Legal',
+            description:
+              'Nexpeak is a modern legal firm providing expert guidance in corporate, compliance, and technology law.',
+            publisher: {
+              '@type': 'Organization',
+              name: 'Nexpeak Legal Services',
+              url: 'https://www.nexpeaklegal.com',
+            },
+          }),
         }}
       />
 

@@ -1,23 +1,18 @@
-'use client'; // Add this line at the top
-
 import Link from 'next/link';
-import { useState } from 'react';
+
+const bannerContent = {
+  description:
+    'Nexpeak is a modern legal and compliance partner for startups, founders, and growing businesses across India. We provide end-to-end corporate legal services — from incorporation and regulatory compliance to intellectual property, taxation, and strategic advisory. With experience across 40+ industries, our team helps businesses stay compliant, protected, and confidently focused on long-term growth.',
+  socialLinks: [
+    { icon: 'icon-icon-1', url: 'https://www.linkedin.com/company/nexpeaklawfirm/' },
+    { icon: 'icon-icon-2', url: 'https://www.facebook.com/nexpeaklawfirm' },
+    { icon: 'icon-icon-3', url: 'https://www.instagram.com/nexpeaklawfirm/' },
+  ],
+  backgroundImage: '/assets/img/pattern/banner-v1-pattern.png',
+  bannerImage: '/images/home/hero.png',
+};
 
 export default function Banner() {
-  // State for dynamic data (e.g., dynamic images or text)
-  const [bannerContent, setBannerContent] = useState({
-    description:
-      'At Nexpeak, we’re redefining how businesses access legal services. As India’s first legal partner for enterprises of all sizes, we deliver cost-effective, accessible, and reliable solutions that cover every aspect of corporate law. With expertise across 40+ sectors, our team ensures your business is protected, compliant, and positioned for long-term success.',
-    socialLinks: [
-      { icon: 'icon-icon-1', url: '/link1' },
-      { icon: 'icon-icon-2', url: '/link2' },
-      { icon: 'icon-icon-3', url: '/link3' },
-      { icon: 'icon-icon-4', url: '/link4' },
-    ],
-    backgroundImage: '/assets/img/pattern/banner-v1-pattern.png',
-    bannerImage: '/images/home/hero.png',
-  });
-
   return (
     <>
       {/* Start Banner One */}
@@ -26,34 +21,39 @@ export default function Banner() {
           <div className="banner-one__social-links">
             <div className="banner-one__social-links-inner">
               {bannerContent.socialLinks.map((link, index) => (
-                <Link href={link.url} key={index}>
+                <Link href={link.url} key={index} target="_blank">
                   <span className={link.icon}></span>
                 </Link>
               ))}
             </div>
           </div>
+
           <div
             className="banner-one__content-pattern"
             style={{ backgroundImage: `url(${bannerContent.backgroundImage})` }}
           ></div>
+
           <div className="container">
             <div className="banner-one__content-inner">
               <div className="banner-one__content-left">
-                <h2>
+                <h1 style={{fontSize:"3rem"}}>
                   <span
-                    style={{ color: '#008bbf', textDecoration: 'underline' }}
+                    style={{ color: '#008bbf', textDecoration: 'underline', }}
                   >
                     Nexpeak:{' '}
                   </span>
-                  For a Strategic, <br />
-                  Long-Term Legal Partner
-                </h2>
+                  Your Strategic <br />
+                  Legal & Compliance Partner
+                </h1>
               </div>
+
               <div className="banner-one__content-right">
-                <p className="tw-text-red-500">{bannerContent.description}</p>
+                <p className="tw-text-red-500">
+                  {bannerContent.description}
+                </p>
                 <div className="btn-box">
-                  <Link href="#">
-                    Learn More <span className="icon-icon-8"></span>
+                  <Link href="/contact">
+                    Talk to a Lawyer <span className="icon-icon-8"></span>
                   </Link>
                 </div>
               </div>
