@@ -151,7 +151,7 @@ Delhi, Gurugram, and India with expert legal and compliance solutions.
           </div>
           <div className="text-center col-md-6 text-md-end">
             <p className="mb-0">
-              &copy; 2025 Nexpeak. All rights reserved. Designed by{' '}
+              &copy; 2025 Nexpeak. All rights reserved. Developed by{' '}
               <a
                 href="https://www..in"
                 target="_blank"

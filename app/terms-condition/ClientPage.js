@@ -2,7 +2,6 @@
 
 import React from 'react';
 import PolicyPage from '@/components/common/PolicyPage';
-import Layout from '@/components/layout/Layout';
 
 const termsAndConditionsData = {
   title: 'Nexpeak Terms of Use',
@@ -94,9 +93,7 @@ const termsAndConditionsData = {
 
 const TermsAndConditions = () => {
   return (
-    <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="Terms of Use">
-      <PolicyPage policyData={termsAndConditionsData} />
-    </Layout>
+    <PolicyPage policyData={termsAndConditionsData} />
   );
 };
 

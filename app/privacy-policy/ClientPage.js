@@ -2,7 +2,6 @@
 
 import React from 'react';
 import PolicyPage from '@/components/common/PolicyPage';
-import Layout from '@/components/layout/Layout';
 
 const dataPrivacyData = {
   title: 'Nexpeak Data Privacy Policy',
@@ -118,9 +117,7 @@ const dataPrivacyData = {
 
 const DataPrivacy = () => {
   return (
-    <Layout headerStyle={1} footerStyle={1} breadcrumbTitle="Privacy Policy">
-      <PolicyPage policyData={dataPrivacyData} />
-    </Layout>
+    <PolicyPage policyData={dataPrivacyData} />
   );
 };
 

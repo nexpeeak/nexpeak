@@ -17,7 +17,7 @@ export const metadata = {
         url: '/images/team/shivangi.jpeg',
         width: 1200,
         height: 630,
-        alt: 'Nexpeak Legal Team',
+        alt: 'Nexpeak Legal Founder and Managing Partner',
       },
     ],
     type: 'website',
